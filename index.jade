@@ -2,7 +2,7 @@ mixin nameNmber (type, label, price)
 	li
 		h5: strong Personalizzazione applicata:
 		p= type
-			span.label.label-default.lead= label
+			span.label.label-default= label
 		p.price
 			strong: em € #{price}
 mixin patch (patch, price)
@@ -133,7 +133,7 @@ html(lang='en')
 						//p.size Taglia XXL
 						ul.customisation
 
-							+nameNmber ("Giocatore: ", "BONAVENTURA / 28", "15,00")
+							+nameNmber ("Name Number: ", "BBBBBBBBBB / 10", "15,00")
 							//li
 								h5: strong Patch applicate:
 								+patch("Lega Calcio Patch", "5,00")
