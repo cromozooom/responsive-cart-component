@@ -1,0 +1,317 @@
+mixin nameNmber (type, label, price)
+	li
+		h5: strong Personalizzazione applicata:
+		p= type
+			span.label.label-default.lead= label
+		p.price
+			strong: em € #{price}
+mixin patch (patch, price)
+	.pers
+		p= patch
+		p.price
+			strong: em € #{price}
+// col 01
+mixin productImage(title, link, image)
+	.col-xs-12.col-sm-6.col-md-3.product
+		p.titleHead: strong
+			| product
+		p.text-center= title
+		img.img-responsive(src="#{imagePath}#{image}")
+
+
+
+- lang 					= "en"
+- imagePath 			= "assets/images/"
+- titlePage 			= "Cart AC MILAN"
+- googleFonts01			= ""
+- namepage				= "cart" // page name fro body class
+- namepage				= "cart-checkout" // page name fro body class
+
+if lang == "en"
+	- checkOutBtnCopy 		= "check out"
+
+doctype html
+html(lang='en')
+	head
+		//- title
+		block titlePage
+				title #{titlePage}
+		title DevTips Starter Kit
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		//link(rel="shortcut icon" href="assets/img/favicons/favicon.ico")
+		link(rel="stylesheet" href="assets/css/main.css")
+
+		//- fontgoogle
+		link(href="#{googleFonts01}" rel="stylesheet" type="text/css")
+	body(class="#{namepage}")
+		// content here
+			.container-fluid
+				.container
+					header
+						p.text-center sample header
+					section.contentLineUP
+						block topBlock
+							if namepage == "cart"
+								.col-xs-12
+									h1 SHOPPING CART
+							if namepage == "cart-checkout"
+								.col-xs-12.col-sm-3
+									h3 SHOPPING CART
+								.col-xs-12.col-sm-9
+									ul.list-inline.pull-right
+										li
+											a(href="#paypall")
+												img(src="#{imagePath}payPall.jpg")
+										li
+											a.btn.btn-lg.btn-primary(href="#paypall")= checkOutBtnCopy
+		br
+		br
+		.container-fluid.containerTableProd.no-gutter
+			.container.no-gutter
+
+				// product 01
+				.ProdTable.row
+
+
+					+productImage("Ac Milan Home Authentic Jersey 2015/16", "", "thumb01.jpg")
+
+					.col-xs-12.col-sm-6.col-md-3.custom
+						p.titleHead: strong
+							| custom
+						p.size
+							| Taglia 
+							strong XXL
+						ul.customisation
+
+							+nameNmber ("Giocatore: ", "BONAVENTURA / 28", "15,00")
+							li
+								h5: strong Patch applicate:
+								+patch("Lega Calcio Patch", "5,00")
+								+patch("Ucl Badge Of Honour 7 2013/15", "5,00")
+
+					.col-xs-12.col-sm-12.col-md-6.priceOption
+						.row
+
+							.col-xs-12.col-sm-6.col-md-4.priceUnit
+								p.titleHead: strong
+									| prezzo unitario
+								h4.price
+									strong € 105,00
+
+							.col-xs-6.col-sm-6.col-md-4.quantity
+								p.titleHead: strong
+									| quantita
+								.input-group.number-spinner
+									span.input-group-btn.left
+										button.btn.btn-default(data-dir="dwn")
+											span.glyphicon.glyphicon-minus
+
+									input.form-control.text-center.qty(type="text" value="1")
+									span.input-group-btn.right
+										button.btn.btn-default(data-dir="up")
+											span.glyphicon.glyphicon-plus
+								a.btn(href="#")
+									| Cancella il prodotto
+
+							.col-xs-6.col-sm-12.col-md-4.partialPrice
+								p.titleHead: strong
+									| totale parziale
+								h4.unitPrice
+									strong.price € 215,00
+					.clearfix
+
+
+				// product 02
+				.ProdTable.row
+
+					+productImage("Milan Home Jersey 2015/16 Iphone 6", "", "thumb02.jpg")
+
+					.col-xs-12.col-sm-6.col-md-3.custom
+						p.titleHead: strong
+							| custom
+						//p.size Taglia XXL
+						ul.customisation
+
+							+nameNmber ("Giocatore: ", "BONAVENTURA / 28", "15,00")
+							//li
+								h5: strong Patch applicate:
+								+patch("Lega Calcio Patch", "5,00")
+								+patch("Ucl Badge Of Honour 7 2013/15", "5,00")
+
+					.col-xs-12.col-sm-12.col-md-6.priceOption
+						.row
+
+							.col-xs-12.col-sm-6.col-md-4.priceUnit
+								p.titleHead: strong
+									| prezzo unitario
+								h4.price
+									strong € 20,00
+
+							.col-xs-6.col-sm-6.col-md-4.quantity
+								p.titleHead: strong
+									| quantita
+								.input-group.number-spinner
+									span.input-group-btn.left
+										button.btn.btn-default(data-dir="dwn")
+											span.glyphicon.glyphicon-minus
+
+									input.form-control.text-center.qty(type="text" value="1")
+									span.input-group-btn.right
+										button.btn.btn-default(data-dir="up")
+											span.glyphicon.glyphicon-plus
+								a.btn(href="#")
+									| Cancella il prodotto
+
+							.col-xs-6.col-sm-12.col-md-4.partialPrice
+								p.titleHead: strong
+									| totale parziale
+								h4.unitPrice
+									strong.price € 40,00
+					.clearfix
+
+				// product 02
+				.ProdTable.row
+
+					+productImage("Milan Home Sciarpa", "", "thumb03.jpg")
+
+					.col-xs-12.col-sm-6.col-md-3.custom
+						p.titleHead: strong
+							| custom
+						p.size
+							| Taglia 
+							strong UNIV.
+
+					.col-xs-12.col-sm-12.col-md-6.priceOption
+						.row
+
+							.col-xs-12.col-sm-6.col-md-4.priceUnit
+								p.titleHead: strong
+									| prezzo unitario
+								h4.price
+									strong € 20,00
+
+							.col-xs-6.col-sm-6.col-md-4.quantity
+								p.titleHead: strong
+									| quantita
+								.input-group.number-spinner
+									span.input-group-btn.left
+										button.btn.btn-default(data-dir="dwn")
+											span.glyphicon.glyphicon-minus
+
+									input.form-control.text-center.qty(type="text" value="1")
+									span.input-group-btn.right
+										button.btn.btn-default(data-dir="up")
+											span.glyphicon.glyphicon-plus
+								a.btn(href="#")
+									| Cancella il prodotto
+
+							.col-xs-6.col-sm-12.col-md-4.partialPrice
+								p.titleHead: strong
+									| totale parziale
+								h4.unitPrice
+									strong.price € 40,00
+					.clearfix
+
+				//- section.ProdTable.row
+					block prod02
+						.item
+							block infoProd02
+								- title = "Milan Home Jersey 2015/16 Iphone 6"
+								- image = "thumb02.jpg"
+							.col-xs-12.col-sm-6.col-md-3
+								p.titleHead.text-center: strong
+									| product
+								p.text-center #{title}
+								img.img-responsive(src="#{imagePath}#{image}")
+
+							.col-xs-12.col-sm-6.col-md-3
+								p.titleHead: strong
+									| custom
+								ul.customisation
+
+									+nameNmber ("Name number: ", "RAZVAN / 13", "15,00")
+									//- li
+										h5: strong Patch applicate:
+										+patch("Lega Calcio Patch", "5,00")
+										+patch("Ucl Badge Of Honour 7 2013/15", "5,00")
+
+							.col-xs-12.col-sm-12.col-md-6
+								.row
+									hr.col-xs-12.visible-sm-block
+									.col-xs-12.col-md-4
+										p.titleHead.text-center: strong
+											| prezzo unitario
+										p.price.text-center
+											strong € 20,00
+									.col-xs-12.col-md-4
+										p.titleHead.text-center: strong
+											| quantita
+										.input-group.number-spinner
+											span.input-group-btn
+												button.btn.btn-default(data-dir="dwn")
+													span.glyphicon.glyphicon-minus
+
+											input.form-control.text-center(type="text" value="2")
+											span.input-group-btn
+												button.btn.btn-default(data-dir="up")
+													span.glyphicon.glyphicon-plus
+										a.btn(href="#")
+											span.glyphicon.glyphicon-trash
+
+
+
+
+									.col-xs-12.col-md-4
+										hr.col-xs-12.visible-sm-block
+										p.titleHead.pull-right.text-right: strong
+											| totale parziale
+										h4.unitPrice.pull-right.text-right
+											strong.price € 40,00
+
+							.clearfix
+
+				//- block prod02
+					hr.col-xs-12
+					block dataProd
+						block infoProd02
+							
+						.col-xs-12.col-md-3
+							p #{title}
+							img.img-responsive(src="#{imagePath}#{image}")
+
+						.col-xs-12.col-md-3
+							p.pill Taglia XXL
+							ul
+								+nameNmber ("Name number: ", "RAZVAN / 13", "15,00")
+
+						.col-xs-12.col-md-6
+							.col-xs-12.col-md-4
+								p.price
+									strong € 105,00
+							.col-xs-12.col-md-4
+								.input-group.number-spinner
+									span.input-group-btn
+										button.btn.btn-default(data-dir="dwn")
+											span.glyphicon.glyphicon-minus
+
+									input.form-control.text-center(type="text" value="1")
+									span.input-group-btn
+										button.btn.btn-default(data-dir="up")
+											span.glyphicon.glyphicon-plus
+								a.btn(href="#")
+									span.glyphicon.glyphicon-trash
+									| cancella
+
+
+
+
+							.col-xs-12.col-md-4
+								h4.unitPrice
+									strong € 215,00
+
+						.clearfix
+
+
+		//script(src="assets/js/jquery-2.1.4.min.js")
+		//script(src="assets/js/functions.js" type="text/javascript")
