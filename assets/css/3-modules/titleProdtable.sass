@@ -1,0 +1,50 @@
+@mixin debug()
+	background: lighten(green, 70%)
+
+.ProdTable
+	.titleHead
+		background: darken(white, 20%)
+		color: darken(white, 60%)
+		text-transform: uppercase
+		text-indent: $indent
+		font-size: .65em
+		width: 100%
+		padding: .5em 0
+		display: inline-block
+		float: left
+
+	.product, .custom, .priceOption
+		.titleHead
+			background: white
+	.product
+		text-align: center
+		.titleHead
+			background: darken(white, 20%)
+
+	.priceOption
+		.partialPrice
+			.titleHead
+				text-align: right
+				padding-right: 10px
+
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min)
+	.ProdTable
+		.product, .custom
+			.titleHead
+				background: darken(white, 20%)
+		.product
+			.titleHead
+				text-align: center
+
+// Medium devices (desktops, 992px and up)
+@media (min-width: $screen-md-min)
+	.ProdTable
+		.product, .custom, .priceOption
+			.titleHead
+				background: darken(white, 20%)
+
+//@media (min-width: $screen-lg-min)

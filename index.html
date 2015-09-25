@@ -11,156 +11,217 @@
     <link href="" rel="stylesheet" type="text/css">
   </head>
   <body class="cart-checkout">
-    <!-- content here
-    .container-fluid
-    	.container
-    		header
-    			p.text-center sample header
-    		section.contentLineUP
-    			block topBlock
-    				if namepage == "cart"
-    					.col-xs-12
-    						h1 SHOPPING CART
-    				if namepage == "cart-checkout"
-    					.col-xs-12.col-sm-3
-    						h3 SHOPPING CART
-    					.col-xs-12.col-sm-9
-    						ul.list-inline.pull-right
-    							li
-    								a(href="#paypall")
-    									img(src="assets/images/payPall.jpg")
-    							li
-    								a.btn.btn-lg.btn-primary(href="#paypall")= checkOutBtnCopy
-    --><br><br>
-    <div class="container-fluid containerTableProd no-gutter">
+    <!-- content here-->
+    <div class="container-fluid no-gutter">
       <div class="container no-gutter">
-        <!-- product 01-->
-        <div class="ProdTable row">
-          <div class="col-xs-12 col-sm-6 col-md-3 product">
-            <p class="titleHead"><strong>product</strong></p>
-            <p class="text-center">Ac Milan Home Authentic Jersey 2015/16</p><img src="assets/images/thumb01.jpg" class="img-responsive"/>
+        <section class="contentLineUp">
+          <div class="col-xs-12 col-sm-3">
+            <h4>SHOPPING CART</h4>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-3 custom">
-            <p class="titleHead"><strong>custom</strong></p>
-            <p class="size">Taglia <strong>XXL</strong></p>
-            <ul class="customisation">
-              <li>
-                <h5><strong>Personalizzazione applicata:</strong></h5>
-                <p>Giocatore: <span class="label label-default">BONAVENTURA / 28</span></p>
-                <p class="price"><strong><em>€ 15,00</em></strong></p>
-              </li>
-              <li>
-                <h5><strong>Patch applicate:</strong></h5>
-                <div class="pers">
-                  <p>Lega Calcio Patch</p>
-                  <p class="price"><strong><em>€ 5,00</em></strong></p>
-                </div>
-                <div class="pers">
-                  <p>Ucl Badge Of Honour 7 2013/15</p>
-                  <p class="price"><strong><em>€ 5,00</em></strong></p>
-                </div>
-              </li>
+          <div class="col-xs-12 col-sm-9">
+            <ul class="list-inline text-right">
+              <li><a href="#paypall"><img src="assets/images/payPall.png"></a></li>
+              <li><a href="#paypall" class="btn btn-sm btn-primary">CHECK OUT</a></li>
             </ul>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 priceOption">
-            <div class="row">
-              <div class="col-xs-12 col-sm-6 col-md-4 priceUnit">
-                <p class="titleHead"><strong>prezzo unitario</strong></p>
-                <h4 class="price"><strong>€ 105,00</strong></h4>
+        </section>
+      </div>
+    </div>
+    <div class="container containerTableProd no-gutter">
+      <div class="ProdTable row">
+        <div class="col-xs-12 col-sm-6 col-md-3 product">
+          <p class="titleHead"><strong>product 01</strong></p>
+          <p class="text-center">Ac Milan Home Authentic Jersey 2015/16</p><img src="assets/images/thumb01.jpg" class="img-responsive"/>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 custom">
+          <p class="titleHead"><strong>custom</strong></p>
+          <p class="size">Taglia: <strong>XXL</strong></p>
+          <ul class="customisation">
+            <li>
+              <h5><strong>Personalizzazione applicata:</strong></h5>
+              <p>Giocatore: <span class="label label-default">BONAVENTURA / 28</span></p>
+              <p class="price"><strong><em>€ 15,00</em></strong></p>
+            </li>
+            <li>
+              <h5><strong>Patch applicate:</strong></h5>
+              <div class="pers">
+                <p>Lega Calcio Patch</p>
+                <p class="price"><strong><em>€ 5,00</em></strong></p>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-4 quantity">
-                <p class="titleHead"><strong>quantita</strong></p>
-                <div class="input-group number-spinner"><span class="input-group-btn left">
-                    <button data-dir="dwn" class="btn btn-default"><span class="glyphicon glyphicon-minus"></span></button></span>
-                  <input type="text" value="1" class="form-control text-center qty"><span class="input-group-btn right">
-                    <button data-dir="up" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button></span>
-                </div><a href="#" class="btn">Cancella il prodotto</a>
+              <div class="pers">
+                <p>Ucl Badge Of Honour 7 2013/15</p>
+                <p class="price"><strong><em>€ 5,00</em></strong></p>
               </div>
-              <div class="col-xs-6 col-sm-12 col-md-4 partialPrice">
-                <p class="titleHead"><strong>totale parziale</strong></p>
-                <h4 class="unitPrice"><strong class="price">€ 215,00</strong></h4>
+            </li>
+          </ul>
+        </div>
+        <hr class="col-xs-12 visible-xs-block visible-sm-block">
+        <div class="col-xs-12 col-sm-12 col-md-6 priceOption">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 priceUnit">
+              <p class="titleHead"><strong>prezzo unitario</strong></p>
+              <h4 class="price"><strong>€ 105,00</strong></h4>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-4 quantity">
+              <p class="titleHead"><strong>quantita</strong></p>
+              <div class="input-group number-spinner"><span class="input-group-btn left">
+                  <button data-dir="dwn" class="btn btn-default"><span class="glyphicon glyphicon-minus"></span></button></span>
+                <input type="text" value="1" class="form-control text-center qty"><span class="input-group-btn right">
+                  <button data-dir="up" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button></span>
               </div>
+              <div class="modifyAction"><a href="#" class="update"><strong>Update</strong></a><a href="#" class="delete"><strong>Cancella il prodotto</strong></a></div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-4 partialPrice">
+              <p class="titleHead"><strong>totale parziale</strong></p>
+              <h4 class="unitPrice"><strong class="price">€ 215,00</strong></h4>
             </div>
           </div>
-          <div class="clearfix"></div>
         </div>
-        <!-- product 02-->
-        <div class="ProdTable row">
-          <div class="col-xs-12 col-sm-6 col-md-3 product">
-            <p class="titleHead"><strong>product</strong></p>
-            <p class="text-center">Milan Home Jersey 2015/16 Iphone 6</p><img src="assets/images/thumb02.jpg" class="img-responsive"/>
+        <div class="clearfix"></div>
+      </div>
+      <div class="ProdTable row">
+        <div class="col-xs-12 col-sm-6 col-md-3 product">
+          <p class="titleHead"><strong>product 02</strong></p>
+          <p class="text-center">Milan Home Jersey 2015/16 Iphone 6</p><img src="assets/images/thumb02.jpg" class="img-responsive"/>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 custom">
+          <p class="titleHead"><strong>custom</strong></p>
+          <!--p.size Taglia XXL-->
+          <ul class="customisation">
+            <li>
+              <h5><strong>Personalizzazione applicata:</strong></h5>
+              <p>Name Number: <span class="label label-default">123456789012345 / 10</span></p>
+              <p class="price"><strong><em>€ 15,00</em></strong></p>
+            </li>
+            <!--li
+            h5: strong Patch applicate:
+            +patch("Lega Calcio Patch", "5,00")
+            +patch("Ucl Badge Of Honour 7 2013/15", "5,00")
+            -->
+          </ul>
+        </div>
+        <hr class="col-xs-12 visible-xs-block visible-sm-block">
+        <div class="col-xs-12 col-sm-12 col-md-6 priceOption">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 priceUnit">
+              <p class="titleHead"><strong>prezzo unitario</strong></p>
+              <h4 class="price"><strong>€ 20,00</strong></h4>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-4 quantity">
+              <p class="titleHead"><strong>quantita</strong></p>
+              <div class="input-group number-spinner"><span class="input-group-btn left">
+                  <button data-dir="dwn" class="btn btn-default"><span class="glyphicon glyphicon-minus"></span></button></span>
+                <input type="text" value="1" class="form-control text-center qty"><span class="input-group-btn right">
+                  <button data-dir="up" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button></span>
+              </div>
+              <div class="modifyAction"><a href="#" class="update"><strong>Update</strong></a><a href="#" class="delete"><strong>Cancella il prodotto</strong></a></div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-4 partialPrice">
+              <p class="titleHead"><strong>totale parziale</strong></p>
+              <h4 class="unitPrice"><strong class="price">€ 40,00</strong></h4>
+            </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-3 custom">
-            <p class="titleHead"><strong>custom</strong></p>
-            <!--p.size Taglia XXL-->
-            <ul class="customisation">
-              <li>
-                <h5><strong>Personalizzazione applicata:</strong></h5>
-                <p>Name Number: <span class="label label-default">BBBBBBBBBB / 10</span></p>
-                <p class="price"><strong><em>€ 15,00</em></strong></p>
-              </li>
-              <!--li
-              h5: strong Patch applicate:
-              +patch("Lega Calcio Patch", "5,00")
-              +patch("Ucl Badge Of Honour 7 2013/15", "5,00")
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="ProdTable row">
+        <div class="col-xs-12 col-sm-6 col-md-3 product">
+          <p class="titleHead"><strong>product 03</strong></p>
+          <p class="text-center">Milan Home Sciarpa</p><img src="assets/images/thumb03.jpg" class="img-responsive"/>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 custom">
+          <p class="titleHead"><strong>custom</strong></p>
+          <p class="size">Taglia: <strong>Unica</strong></p>
+        </div>
+        <hr class="col-xs-12 visible-xs-block visible-sm-block">
+        <div class="col-xs-12 col-sm-12 col-md-6 priceOption">
+          <div class="row">
+            <div class="col-xs-12 col-sm-112 col-md-4 priceUnit">
+              <p class="titleHead"><strong>prezzo unitario</strong></p>
+              <h4 class="price"><strong>€ 20,00</strong></h4>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-4 quantity">
+              <p class="titleHead"><strong>quantita</strong></p>
+              <div class="input-group number-spinner"><span class="input-group-btn left">
+                  <button data-dir="dwn" class="btn btn-default"><span class="glyphicon glyphicon-minus"></span></button></span>
+                <input type="text" value="1" class="form-control text-center qty"><span class="input-group-btn right">
+                  <button data-dir="up" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button></span>
+              </div>
+              <div class="modifyAction"><a href="#" class="update"><strong>Update</strong></a><a href="#" class="delete"><strong>Cancella il prodotto</strong></a></div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-4 partialPrice">
+              <p class="titleHead"><strong>totale parziale</strong></p>
+              <h4 class="unitPrice"><strong class="price">€ 40,00</strong></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <!--.container-fluid-->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6"></div>
+        <!-- shipping - coupon & gift-->
+        <div class="col-xs-12 col-sm-6 shippingCouponGift">
+          <form class="form-horizontal">
+            <div class="form-group row shipping">
+              <label for="Shipping" class="col-xs-12 col-sm-6 col-md-5 control-label"><span class="text-left pull-left">Spese di spedizione</span></label>
+              <!--input.form-control( type="text" class="" id="Shipping" placeholder="Italy")-->
+              <div class="col-xs-12 col-sm-6 col-md-7">
+                <select class="form-control">
+                  <option>Italy</option>
+                  <option>Romania</option>
+                  <option>CCCP</option>
+                  <option>USA</option>
+                  <option>UK</option>
+                </select>
+              </div>
+              <!--button.btn.btn-default(type="submit")-->
+              <div class="col-xs-12">
+                <p>Spedizzione - Coriere expresso: <strong class="price">€ 44,00</strong></p>
+              </div>
+            </div>
+            <div class="form-group row coupon">
+              <label for="coupon" class="col-xs-12 col-sm-3 col-md-5 control-label"><span class="text-left pull-left">Codice sconto</span></label>
+              <div class="col-xs-7 col-sm-5 col-md-4">
+                <input type="text" id="coupon" placeholder="insert coupon" class="form-control">
+              </div>
+              <div class="col-xs-5 col-sm-4 col-md-3">
+                <button type="submit" class="btn btn-info pull-right">+ Coupon</button>
+              </div>
+              <!-- .col-xs-12
+              p Coupon: 
+              	strong FREE SHIPPING
               
               -->
-            </ul>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 priceOption">
-            <div class="row">
-              <div class="col-xs-12 col-sm-6 col-md-4 priceUnit">
-                <p class="titleHead"><strong>prezzo unitario</strong></p>
-                <h4 class="price"><strong>€ 20,00</strong></h4>
+            </div>
+            <div class="form-group row giftCard">
+              <label for="giftCard" class="col-xs-12 col-sm-3 col-md-5 control-label"><span class="text-left pull-left">GIFT card</span></label>
+              <div class="col-xs-7 col-sm-5 col-md-4">
+                <input type="text" id="giftCard" placeholder="insert giftCard" class="form-control">
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-4 quantity">
-                <p class="titleHead"><strong>quantita</strong></p>
-                <div class="input-group number-spinner"><span class="input-group-btn left">
-                    <button data-dir="dwn" class="btn btn-default"><span class="glyphicon glyphicon-minus"></span></button></span>
-                  <input type="text" value="1" class="form-control text-center qty"><span class="input-group-btn right">
-                    <button data-dir="up" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button></span>
-                </div><a href="#" class="btn">Cancella il prodotto</a>
+              <div class="col-xs-5 col-sm-4 col-md-3">
+                <button type="submit" class="btn btn-info pull-right">+ Gift card</button>
               </div>
-              <div class="col-xs-6 col-sm-12 col-md-4 partialPrice">
-                <p class="titleHead"><strong>totale parziale</strong></p>
-                <h4 class="unitPrice"><strong class="price">€ 40,00</strong></h4>
-              </div>
+              <div class="col-xs-12"><a href="#" class="bg-link"><strong>Verify your gift card</strong></a></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid no-gutter">
+      <div class="container no-gutter">
+        <section class="contentLineDown">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12">
+              <ul class="list-inline text-right">
+                <li><a href="#paypall"><img src="assets/images/payPall.png"></a></li>
+                <li><a href="#paypall" class="btn btn-lg btn-primary">CHECK OUT</a></li>
+              </ul>
             </div>
           </div>
-          <div class="clearfix"></div>
-        </div>
-        <!-- product 02-->
-        <div class="ProdTable row">
-          <div class="col-xs-12 col-sm-6 col-md-3 product">
-            <p class="titleHead"><strong>product</strong></p>
-            <p class="text-center">Milan Home Sciarpa</p><img src="assets/images/thumb03.jpg" class="img-responsive"/>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3 custom">
-            <p class="titleHead"><strong>custom</strong></p>
-            <p class="size">Taglia <strong>UNIV.</strong></p>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 priceOption">
-            <div class="row">
-              <div class="col-xs-12 col-sm-6 col-md-4 priceUnit">
-                <p class="titleHead"><strong>prezzo unitario</strong></p>
-                <h4 class="price"><strong>€ 20,00</strong></h4>
-              </div>
-              <div class="col-xs-6 col-sm-6 col-md-4 quantity">
-                <p class="titleHead"><strong>quantita</strong></p>
-                <div class="input-group number-spinner"><span class="input-group-btn left">
-                    <button data-dir="dwn" class="btn btn-default"><span class="glyphicon glyphicon-minus"></span></button></span>
-                  <input type="text" value="1" class="form-control text-center qty"><span class="input-group-btn right">
-                    <button data-dir="up" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button></span>
-                </div><a href="#" class="btn">Cancella il prodotto</a>
-              </div>
-              <div class="col-xs-6 col-sm-12 col-md-4 partialPrice">
-                <p class="titleHead"><strong>totale parziale</strong></p>
-                <h4 class="unitPrice"><strong class="price">€ 40,00</strong></h4>
-              </div>
-            </div>
-          </div>
-          <div class="clearfix"></div>
-        </div>
+        </section>
       </div>
     </div>
     <!--script(src="assets/js/jquery-2.1.4.min.js")-->

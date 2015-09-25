@@ -1,10 +1,33 @@
 $priceColor: #00a453
 $linkColor: red
+$indent: 10px
 
-
+@import "titleProdtable";
 
 .containerTableProd, .cart-checkout
 	background: darken( white, 15%)
+
+.ProdTable
+	//padding: 0 20px
+	margin-bottom: 2em
+	padding-bottom: .5em
+	background: white
+
+
+.ProdTable
+	.modifyAction
+		a
+			width: auto
+			text-align: left
+			display: inline-block
+			padding: .5em 0
+			margin: .2em 0
+			text-indent: $indent
+			font-size: .8em
+			// background: lighten(green, 50%)
+			margin-top: 1em
+
+
 .ProdTable
 	.custom
 		.label
@@ -14,19 +37,6 @@ $linkColor: red
 		color: $linkColor
 		text-decoration: underline
 
-	background: white
-	margin-bottom: 2em
-	padding-bottom: .5em
-	.titleHead
-		text-transform: uppercase
-		text-indent: 1em
-		font-size: .65em
-		width: 100%
-		background: darken(white, 10%)
-		padding: .5em 0
-		color: darken(white, 40%)
-		display: inline-block
-		float: left
 
 	img
 		max-width: 150px
@@ -46,16 +56,11 @@ $linkColor: red
 		border: 2px solid $priceColor
 		//display: inline-block
 		padding: .4em .5em
-		margin: .1em 1em 0 1em
+		margin: .1em $indent 0 1em
 		text-align: center
 		text-indent: 0
 		width: auto
 		float: right
-
-	.partialPrice
-		.titleHead
-			text-align: right
-			padding-right: 1em
 
 
 	.size
@@ -79,39 +84,66 @@ $linkColor: red
 		.input-group-btn.left
 			border-right: 1px solid white
 	.priceUnit
-		text-indent: 1em
+		text-indent: $indent
 		//.price
 	.custom
-		text-indent: 1em
+		text-indent: $indent
 
+.shippingCouponGift
+	background: white
+	//padding-top: 1em
+	label span
+		font-size: 1em
+	.form-group
+		margin-bottom: 0px
+	.shippingCouponGift
+		.btn
+			width: 100%
+	.shipping, .coupon, .giftCard
+		padding-top: 0.5em
+		padding-bottom: 0.5em
+		p, a
+			padding-top: .5em
+			.price, strong
+				color: $priceColor
+		a
+			strong
+				color: $linkColor
+				font-size: .8em
+	.shipping
+		background: darken(white, 0%)
+	.coupon, .giftCard
+		background: lighten(yellow, 40%)
 
-
-@media (max-width: 990px)
-	.ProdTable
-		.titleHead
-			text-align: left
-			background: white
-			color: darken(white, 40%)
-		.product, .custom
-			.titleHead
-				background: darken(white, 10%)
-
-
-@media (max-width: 767px)
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min)
 	.cart-checkout
-		.containerTableProd.no-gutter
-			padding: 0 1em
-
 		.unitPrice
 			float: right
 
-		.product
-			.titleHead
-				text-align: center
-				background: darken(white, 10%)
-		.custom
-			.titleHead
-				background: white
+	.shippingCouponGift
+		label span
+			font-size: .85em
+		.btn
+			width: 100%
 
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min)
+	.ProdTable
+		.modifyAction
+			a
+				width: auto
+				float: left
+				text-align: left
+				text-indent: 0
+				padding: .5em
+				margin-left: 1em
+				margin-top: 1em
+	.shippingCouponGift
+		label span
+			font-size: .85em
+		.btn
+			width: 100%
 
-
+// Large devices (large desktops, 1200px and up)
+//@media (min-width: $screen-lg-min)
