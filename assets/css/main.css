@@ -6655,21 +6655,32 @@ button.close {
  }
 
 /* line 7, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+.shippingAdress, .shipingMethode, .paymentMethode {
+  background: white;
+  border-top: 5px solid #4d4d4d;
+  margin-top: 1em; }
+
+/* line 13, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+.paymentMethode h4 .label {
+  margin-right: 0.5em;
+  background: red; }
+
+/* line 17, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
 .containerTableProd, .cart-checkout {
   background: #d9d9d9; }
 
-/* line 11, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
-.message .price {
+/* line 20, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+.price {
   color: #00a453;
   font-size: 1.2em; }
 
-/* line 15, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+/* line 24, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
 .ProdTable {
   margin-bottom: 2em;
   padding-bottom: 0.5em;
   background: white; }
 
-/* line 23, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+/* line 32, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
 .ProdTable .modifyAction a {
   width: auto;
   text-align: left;
@@ -6680,33 +6691,8 @@ button.close {
   font-size: 0.8em;
   margin-top: 1em; }
 
-/* line 36, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
-.ProdTable .custom .label {
-  font-size: 0.85em;
-  background: black; }
-/* line 39, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
-.ProdTable a {
-  color: red;
-  text-decoration: underline; }
-/* line 44, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
-.ProdTable img {
-  max-width: 150px;
-  margin: 0 auto 1em auto; }
-/* line 47, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
-.ProdTable .price {
-  color: #00a453; }
-/* line 50, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
-.ProdTable ul.customisation {
-  list-style: none;
-  padding: 0; }
-  /* line 53, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
-  .ProdTable ul.customisation li {
-    padding: 0; }
-/* line 55, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
-.ProdTable .input-group {
-  max-width: 120px; }
-/* line 58, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
-.ProdTable .unitPrice {
+/* line 42, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+.unitPrice {
   border: 2px solid #00a453;
   padding: 0.4em 0.5em;
   margin: 0.1em 10px 0 1em;
@@ -6714,87 +6700,114 @@ button.close {
   text-indent: 0;
   width: auto;
   float: right; }
-/* line 68, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
-.ProdTable .size {
+
+/* line 51, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+.size {
   border: 2px solid #b3b3b3;
   width: auto;
   display: inline-block;
   padding: 0.3em 0.5em;
   text-indent: 0;
   border-radius: 4px; }
-/* line 76, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+
+/* line 61, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+.ProdTable .custom .label {
+  font-size: 0.85em;
+  background: black; }
+/* line 64, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+.ProdTable a {
+  color: red;
+  text-decoration: underline; }
+/* line 69, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+.ProdTable img {
+  max-width: 150px;
+  margin: 0 auto 1em auto; }
+/* line 72, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+.ProdTable .price {
+  color: #00a453; }
+/* line 75, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+.ProdTable ul.customisation {
+  list-style: none;
+  padding: 0; }
+  /* line 78, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+  .ProdTable ul.customisation li {
+    padding: 0; }
+/* line 80, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+.ProdTable .input-group {
+  max-width: 120px; }
+/* line 86, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
 .ProdTable .quantity .btn-default {
   color: red; }
-/* line 78, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+/* line 88, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
 .ProdTable .quantity .input-group {
   margin-left: 1em; }
-/* line 80, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+/* line 90, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
 .ProdTable .quantity input {
   border: none;
   border-left: 0px solid white; }
-/* line 83, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+/* line 93, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
 .ProdTable .quantity .input-group-btn.right {
   border-left: 1px solid white; }
-/* line 85, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+/* line 95, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
 .ProdTable .quantity .input-group-btn.left {
   border-right: 1px solid white; }
-/* line 87, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+/* line 97, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
 .ProdTable .priceUnit {
   text-indent: 10px; }
-/* line 89, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+/* line 99, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
 .ProdTable .custom {
   text-indent: 10px; }
 
-/* line 92, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+/* line 102, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
 .shippingCouponGift {
   background: white; }
-  /* line 94, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+  /* line 104, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
   .shippingCouponGift label span {
     font-size: 1em; }
-  /* line 96, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+  /* line 106, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
   .shippingCouponGift .form-group {
     margin-bottom: 0px; }
-  /* line 99, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+  /* line 109, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
   .shippingCouponGift .shippingCouponGift .btn {
     width: 100%; }
-  /* line 101, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+  /* line 111, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
   .shippingCouponGift .shipping, .shippingCouponGift .coupon, .shippingCouponGift .giftCard {
     padding-top: 0.5em;
     padding-bottom: 0.5em; }
-    /* line 104, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+    /* line 114, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
     .shippingCouponGift .shipping p, .shippingCouponGift .shipping a, .shippingCouponGift .coupon p, .shippingCouponGift .coupon a, .shippingCouponGift .giftCard p, .shippingCouponGift .giftCard a {
       padding-top: 0.5em; }
-      /* line 106, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+      /* line 116, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
       .shippingCouponGift .shipping p .price, .shippingCouponGift .shipping p strong, .shippingCouponGift .shipping a .price, .shippingCouponGift .shipping a strong, .shippingCouponGift .coupon p .price, .shippingCouponGift .coupon p strong, .shippingCouponGift .coupon a .price, .shippingCouponGift .coupon a strong, .shippingCouponGift .giftCard p .price, .shippingCouponGift .giftCard p strong, .shippingCouponGift .giftCard a .price, .shippingCouponGift .giftCard a strong {
         color: #00a453; }
-    /* line 109, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+    /* line 119, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
     .shippingCouponGift .shipping a strong, .shippingCouponGift .coupon a strong, .shippingCouponGift .giftCard a strong {
       color: red;
       font-size: 0.8em; }
-  /* line 112, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+  /* line 122, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
   .shippingCouponGift .shipping {
     background: white; }
-  /* line 114, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+  /* line 124, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
   .shippingCouponGift .coupon, .shippingCouponGift .giftCard {
     background: #ffffcc; }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  /* line 120, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+  /* line 130, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
   .cart-checkout .unitPrice {
     float: right; }
 
-  /* line 124, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+  /* line 134, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
   .shippingCouponGift label span {
     font-size: 0.85em; }
-  /* line 126, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+  /* line 136, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
   .shippingCouponGift .btn {
     width: 100%; }
  }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  /* line 133, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+  /* line 143, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
   .ProdTable .modifyAction a {
     width: auto;
     float: left;
@@ -6804,10 +6817,10 @@ button.close {
     margin-left: 1em;
     margin-top: 1em; }
 
-  /* line 142, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+  /* line 152, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
   .shippingCouponGift label span {
     font-size: 0.85em; }
-  /* line 144, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+  /* line 154, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
   .shippingCouponGift .btn {
     width: 100%; }
  }

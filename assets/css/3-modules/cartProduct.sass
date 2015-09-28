@@ -4,13 +4,22 @@ $indent: 10px
 
 @import "titleProdtable";
 
+.shippingAdress, .shipingMethode, .paymentMethode
+	background: white
+	border-top: 5px solid lighten(black, 30%)
+	margin-top: 1em
+
+.paymentMethode
+	h4 .label
+		margin-right: .5em
+		background: $linkColor
+
 .containerTableProd, .cart-checkout
 	background: darken( white, 15%)
 
-.message
-	.price
-		color: $priceColor
-		font-size: 1.2em
+.price
+	color: $priceColor
+	font-size: 1.2em
 
 .ProdTable
 	//padding: 0 20px
@@ -32,6 +41,24 @@ $indent: 10px
 			// background: lighten(green, 50%)
 			margin-top: 1em
 
+.unitPrice
+	border: 2px solid $priceColor
+	//display: inline-block
+	padding: .4em .5em
+	margin: .1em $indent 0 1em
+	text-align: center
+	text-indent: 0
+	width: auto
+	float: right
+
+.size
+	border: 2px solid darken(white, 30%)
+	width: auto
+	display: inline-block
+	padding: .3em .5em
+	text-indent: 0
+	//margin-left: 1em
+	border-radius: 4px
 
 .ProdTable
 	.custom
@@ -57,25 +84,8 @@ $indent: 10px
 	.input-group
 		max-width: 120px
 
-	.unitPrice
-		border: 2px solid $priceColor
-		//display: inline-block
-		padding: .4em .5em
-		margin: .1em $indent 0 1em
-		text-align: center
-		text-indent: 0
-		width: auto
-		float: right
 
 
-	.size
-		border: 2px solid darken(white, 30%)
-		width: auto
-		display: inline-block
-		padding: .3em .5em
-		text-indent: 0
-		//margin-left: 1em
-		border-radius: 4px
 	.quantity
 		.btn-default
 			color: $linkColor
