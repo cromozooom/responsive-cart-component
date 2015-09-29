@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="" rel="stylesheet" type="text/css">
   </head>
-  <body class="cart cart-checkout"><svg style="display: none;">
+  <body class="payment cart-checkout"><svg style="display: none;">
 	<symbol id="verySign">
 		<path fill="#9B0033" d="M34.942,13.268h45.991c4.62,0.006,8.463,1.466,11.709,4.458c3.194,2.96,4.755,6.484,4.804,10.787
 			l0.659-0.006L97.446,28.5c-0.048,4.213-1.607,7.699-4.806,10.705l0.003-0.003c-3.249,2.994-7.094,4.495-11.709,4.5H34.942
@@ -128,195 +128,177 @@
 </svg>
     <!-- content here-->
     <hr>
-    <div class="container-fluid no-gutter">
+    <div class="container-fluid">
       <div class="container">
         <section class="contentLineUp">
           <div class="row">
-            <div class="col-xs-12 col-sm-6">
-              <h3>YOUR CART</h3>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <ul class="list-inline text-right">
-                <li><a href="checkOut.html"><img src="assets/images/payPall.png"></a></li>
-                <li><a href="payment.html" class="btn btn-sm btn-primary">CHECK OUT</a></li>
-              </ul>
-            </div>
             <div class="col-xs-12">
-              <p class="text-right message">Your carts include&nbsp;<strong>3 products&nbsp;</strong>with a total price of&nbsp;<span class="price"><strong>€ 465,00</strong></span></p>
+              <h3>Pay your order</h3>
+              <p class="message">Your cart include&nbsp;<strong>3 products&nbsp;</strong>with a total price of&nbsp;<span class="price"><strong>€ 465,00</strong></span></p>
             </div>
           </div>
         </section>
       </div>
-    </div>
-    <div class="container containerTableProd no-gutter">
-      <div class="ProdTable row">
-        <div class="col-xs-12 col-sm-6 col-md-3 product">
-          <p class="titleHead"><strong>product 01</strong></p>
-          <p class="text-center">Ac Milan Home Authentic Jersey 2015/16</p><img src="assets/images/thumb01.jpg" class="img-responsive"/>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 custom">
-          <p class="titleHead"><strong>custom</strong></p>
-          <p class="size">Taglia: <strong>XXL</strong></p>
-          <ul class="customisation">
-            <h5><strong>Personalizzazione applicata:</strong></h5>
-            <p>Giocatore: <span class="label label-default">BONAVENTURA / 28</span></p>
-            <p class="price"><strong><em>€ 15,00</em></strong></p>
-            <li>
-              <h5><strong>Patch applicate:</strong></h5>
-              <div class="pers">
-                <p>Lega Calcio Patch</p>
-                <p class="price"><strong><em>€ 5,00</em></strong></p>
-              </div>
-              <div class="pers">
-                <p>Ucl Badge Of Honour 7 2013/15</p>
-                <p class="price"><strong><em>€ 5,00</em></strong></p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <hr class="col-xs-12 visible-xs-block visible-sm-block">
-        <div class="col-xs-12 col-sm-12 col-md-6 priceOption">
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-4 priceUnit">
-              <p class="titleHead"><strong>prezzo unitario</strong></p>
-              <h4 class="price"><strong>€ 105,00</strong></h4>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-4 quantity">
-              <p class="titleHead"><strong>quantita</strong></p>
-              <div class="input-group number-spinner"><span class="input-group-btn left">
-                  <button data-dir="dwn" class="btn btn-default"><span class="glyphicon glyphicon-minus"></span></button></span>
-                <input type="text" value="1" class="form-control text-center qty"><span class="input-group-btn right">
-                  <button data-dir="up" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button></span>
-              </div>
-              <div class="modifyAction"><a href="#" class="update"><strong>Update</strong></a><a href="#" class="delete"><strong>Cancella il prodotto</strong></a></div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-4 partialPrice">
-              <p class="titleHead"><strong>totale parziale</strong></p>
-              <h4 class="unitPrice"><strong class="price">€ 215,00</strong></h4>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </div>
-      <div class="ProdTable row">
-        <div class="col-xs-12 col-sm-6 col-md-3 product">
-          <p class="titleHead"><strong>product 02</strong></p>
-          <p class="text-center">Milan Home Jersey 2015/16 Iphone 6</p><img src="assets/images/thumb02.jpg" class="img-responsive"/>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 custom">
-          <p class="titleHead"><strong>custom</strong></p>
-          <!--p.size Taglia XXL-->
-          <ul class="customisation">
-            <li>
-              <h5><strong>Personalizzazione applicata:</strong></h5>
-              <p>Name Number: <span class="label label-default">123456789012345 / 10</span></p>
-              <p class="price"><strong><em>€ 15,00</em></strong></p>
-            </li>
-            <!--li
-            h5: strong Patch applicate:
-            +patch("Lega Calcio Patch", "5,00")
-            +patch("Ucl Badge Of Honour 7 2013/15", "5,00")
-            -->
-          </ul>
-        </div>
-        <hr class="col-xs-12 visible-xs-block visible-sm-block">
-        <div class="col-xs-12 col-sm-12 col-md-6 priceOption">
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-4 priceUnit">
-              <p class="titleHead"><strong>prezzo unitario</strong></p>
-              <h4 class="price"><strong>€ 20,00</strong></h4>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-4 quantity">
-              <p class="titleHead"><strong>quantita</strong></p>
-              <div class="input-group number-spinner"><span class="input-group-btn left">
-                  <button data-dir="dwn" class="btn btn-default"><span class="glyphicon glyphicon-minus"></span></button></span>
-                <input type="text" value="1" class="form-control text-center qty"><span class="input-group-btn right">
-                  <button data-dir="up" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button></span>
-              </div>
-              <div class="modifyAction"><a href="#" class="update"><strong>Update</strong></a><a href="#" class="delete"><strong>Cancella il prodotto</strong></a></div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-4 partialPrice">
-              <p class="titleHead"><strong>totale parziale</strong></p>
-              <h4 class="unitPrice"><strong class="price">€ 40,00</strong></h4>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </div>
-      <div class="ProdTable row">
-        <div class="col-xs-12 col-sm-6 col-md-3 product">
-          <p class="titleHead"><strong>product 03</strong></p>
-          <p class="text-center">Milan Home Sciarpa</p><img src="assets/images/thumb03.jpg" class="img-responsive"/>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 custom">
-          <p class="titleHead"><strong>custom</strong></p>
-          <p class="size">Taglia: <strong>Unica</strong></p>
-        </div>
-        <hr class="col-xs-12 visible-xs-block visible-sm-block">
-        <div class="col-xs-12 col-sm-12 col-md-6 priceOption">
-          <div class="row">
-            <div class="col-xs-12 col-sm-112 col-md-4 priceUnit">
-              <p class="titleHead"><strong>prezzo unitario</strong></p>
-              <h4 class="price"><strong>€ 20,00</strong></h4>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-4 quantity">
-              <p class="titleHead"><strong>quantita</strong></p>
-              <div class="input-group number-spinner"><span class="input-group-btn left">
-                  <button data-dir="dwn" class="btn btn-default"><span class="glyphicon glyphicon-minus"></span></button></span>
-                <input type="text" value="1" class="form-control text-center qty"><span class="input-group-btn right">
-                  <button data-dir="up" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button></span>
-              </div>
-              <div class="modifyAction"><a href="#" class="update"><strong>Update</strong></a><a href="#" class="delete"><strong>Cancella il prodotto</strong></a></div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-4 partialPrice">
-              <p class="titleHead"><strong>totale parziale</strong></p>
-              <h4 class="unitPrice"><strong class="price">€ 40,00</strong></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="clearfix"></div>
-    </div>
-    <!-- slider prod-->
-    <div class="container-fluid relatedProd text-center">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12"><br>
-            <h5 class="text-center"><strong>Related products</strong></h5>
-          </div>
-        </div>
-        <hr>
-        <div class="row relatedProd">
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><img src="assets/images/thumb01.jpg" class="img-responsive"><strong class="price">€ 20,00</strong><a href="#" class="btn btn-link"><strong>+ To cart</strong></a>
-                      <p class="text-center">Ac Milan Home Authentic Jersey 2015/16</p>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><img src="assets/images/thumb02.jpg" class="img-responsive"><strong class="price">€ 20,00</strong><a href="#" class="btn btn-link"><strong>+ To cart</strong></a>
-                      <p class="text-center">Milan Home Jersey 2015/16 Iphone 6</p>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 hidden-xs"><img src="assets/images/thumb03.jpg" class="img-responsive"><strong class="price">€ 20,00</strong><a href="#" class="btn btn-link"><strong>+ To cart</strong></a>
-                      <p class="text-center">Milan Home Sciarpa</p>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 hidden-xs hidden-sm"><img src="assets/images/thumb01.jpg" class="img-responsive"><strong class="price">€ 20,00</strong><a href="#" class="btn btn-link"><strong>+ To cart</strong></a>
-                      <p class="text-center">Ac Milan Home Authentic Jersey 2015/16</p>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 hidden-xs hidden-sm hidden-md"><img src="assets/images/thumb02.jpg" class="img-responsive"><strong class="price">€ 20,00</strong><a href="#" class="btn btn-link"><strong>+ To cart</strong></a>
-                      <p class="text-center">Milan Home Jersey 2015/16 Iphone 6</p>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 hidden-xs hidden-sm hidden-md"><img src="assets/images/thumb03.jpg" class="img-responsive"><strong class="price">€ 20,00</strong><a href="#" class="btn btn-link"><strong>+ To cart</strong></a>
-                      <p class="text-center">Milan Home Sciarpa</p>
-                    </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="clearfix"></div><br>
-      <div class="row">
-        <div class="col-xs-12 col-sm-8 col-md-7 col-lg-6 shippingCouponGift pull-right">
-          <form class="form-horizontal">
-            <div class="form-group row shipping">
-              <label for="Shipping" class="col-xs-12 col-sm-6 col-md-5 control-label"><span class="text-left pull-left">Spese di spedizione</span></label>
-              <!--input.form-control( type="text" class="" id="Shipping" placeholder="Italy")-->
-              <div class="col-xs-12 col-sm-6 col-md-7">
+          <div class="col-xs-12 shippingAdress"><br>
+            <p class="text-left message">Già registrato?&nbsp;<a href=""><strong>Clicca qui</strong></a>&nbsp;per accedere</p>
+            <hr>
+            <h3><strong>Indirizzo di spedizione</strong></h3>
+            <form class="row">
+              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <label for="name">Name&nbsp;<small>(nome)</small>
+                </label>
+                <input id="name" type="text" placeholder="name" class="form-control">
+              </div>
+              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <label for="firstName">First name&nbsp;<small>(family name)</small>
+                </label>
+                <input id="firstName" type="text" placeholder="firstName" class="form-control">
+              </div>
+              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <label for="email">Email
+                </label>
+                <input id="email" type="text" placeholder="email" class="form-control">
+              </div>
+              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <label for="telefono">Telefono</label>
+                <input id="telefono" type="text" placeholder="telefono" class="form-control">
+              </div>
+              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <label for="addres">Addres
+                </label>
+                <input id="addres" type="text" placeholder="addres" class="form-control">
+              </div>
+              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <label for="beside">Beside</label>
+                <input id="beside" type="text" placeholder="secon line" class="form-control">
+              </div>
+              <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <label for="city">City
+                </label>
+                <input id="city" type="text" placeholder="city" class="form-control">
+              </div>
+              <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <label for="province">Province
+                </label>
+                <!--input#province.form-control(type="text" placeholder="province")-->
+                <select class="form-control">
+                          <option>Agrigento</option>
+                          <option>Alessandria</option>
+                          <option>Ancona</option>
+                          <option>Arezzo</option>
+                          <option>Ascoli Piceno</option>
+                          <option>Asti</option>
+                          <option>Avellino</option>
+                          <option>Bari</option>
+                          <option>Barletta-Andria-Trani</option>
+                          <option>Belluno</option>
+                          <option>Benevento</option>
+                          <option>Bergamo</option>
+                          <option>Biella</option>
+                          <option>Bologna</option>
+                          <option>Brescia</option>
+                          <option>Brindisi</option>
+                          <option>Cagliari</option>
+                          <option>Caltanissetta</option>
+                          <option>Campobasso</option>
+                          <option>Carbonia-Iglesias</option>
+                          <option>Caserta</option>
+                          <option>Catania</option>
+                          <option>Catanzaro</option>
+                          <option>Chieti</option>
+                          <option>Como</option>
+                          <option>Cosenza</option>
+                          <option>Cremona</option>
+                          <option>Crotone</option>
+                          <option>Cuneo</option>
+                          <option>Enna</option>
+                          <option>Fermo</option>
+                          <option>Ferrara</option>
+                          <option>Florence</option>
+                          <option>Foggia</option>
+                          <option>Forlì-Cesena</option>
+                          <option>Frosinone</option>
+                          <option>Genoa</option>
+                          <option>Gorizia</option>
+                          <option>Grosseto</option>
+                          <option>Imperia</option>
+                          <option>Isernia</option>
+                          <option>La Spezia</option>
+                          <option>L'Aquila</option>
+                          <option>Latina</option>
+                          <option>Lecce</option>
+                          <option>Lecco</option>
+                          <option>Livorno</option>
+                          <option>Lodi</option>
+                          <option>Lucca</option>
+                          <option>Macerata</option>
+                          <option>Mantua</option>
+                          <option>Massa and Carrara</option>
+                          <option>Matera</option>
+                          <option>Medio Campidano</option>
+                          <option>Messina</option>
+                          <option>Milan</option>
+                          <option>Modena</option>
+                          <option>Monza and Brianza</option>
+                          <option>Naples</option>
+                          <option>Novara</option>
+                          <option>Nuoro</option>
+                          <option>Ogliastra</option>
+                          <option>Olbia-Tempio</option>
+                          <option>Oristano</option>
+                          <option>Padua</option>
+                          <option>Palermo</option>
+                          <option>Parma</option>
+                          <option>Pavia</option>
+                          <option>Perugia</option>
+                          <option>Pesaro and Urbino</a</option>
+                          <option>Pescara</option>
+                          <option>Piacenza</option>
+                          <option>Pisa</option>
+                          <option>Pistoia</option>
+                          <option>Pordenone</option>
+                          <option>Potenza</option>
+                          <option>Prato</option>
+                          <option>Ragusa</option>
+                          <option>Ravenna</option>
+                          <option>Reggio Calabria</option>
+                          <option>Reggio Emilia</option>
+                          <option>Rieti</option>
+                          <option>Rome</option>
+                          <option>Rovigo</option>
+                          <option>Salerno</option>
+                          <option>Sassari</option>
+                          <option>Savona</option>
+                          <option>Siena</option>
+                          <option>Sondrio</option>
+                          <option>Syracuse</option>
+                          <option>Taranto</option>
+                          <option>Teramo</option>
+                          <option>Terni</option>
+                          <option>Trapani</option>
+                          <option>Treviso</option>
+                          <option>Trieste</option>
+                          <option>Turin</option>
+                          <option>Varese</option>
+                          <option>Venice</option>
+                          <option>Verbano-Cusio-Ossola</option>
+                          <option>Vercelli</option>
+                          <option>Verona</option>
+                          <option>Vibo Valentia</option>
+                          <option>Vicenza</option>
+                          <option>Viterbo</option>
+                </select>
+              </div>
+              <div class="form-group col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                <label for="zip">ZIP
+                </label>
+                <input id="zip" type="text" placeholder="zip" class="form-control">
+              </div>
+              <div class="form-group col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                <label for="country">Country
+                </label>
                 <select class="form-control">
                   <option>Afghanistan</option>
                   <option>Albania</option>
@@ -525,54 +507,232 @@
                   <option>Zimbabwe</option>
                 </select>
               </div>
-              <!--button.btn.btn-default(type="submit")-->
-              <div class="col-xs-12">
-                <p class="text-right">Spedizzione - Coriere expresso: <strong class="price">€ 44,00</strong></p>
-              </div>
-            </div>
-            <div class="form-group row coupon">
-              <label for="coupon" class="col-xs-12 col-sm-3 col-md-5 control-label"><span class="text-left pull-left">Codice sconto</span></label>
-              <div class="col-xs-7 col-sm-5 col-md-4">
-                <input type="text" id="coupon" placeholder="insert coupon" class="form-control">
-              </div>
-              <div class="col-xs-5 col-sm-4 col-md-3">
-                <button type="submit" class="btn btn-info pull-right">+ Coupon</button>
-              </div>
-              <!-- .col-xs-12
-              p Coupon: 
-              	strong FREE SHIPPING
-              -->
-            </div>
-            <div class="form-group row giftCard">
-              <label for="giftCard" class="col-xs-12 col-sm-3 col-md-5 control-label"><span class="text-left pull-left">GIFT card</span></label>
-              <div class="col-xs-7 col-sm-5 col-md-4">
-                <input type="text" id="giftCard" placeholder="insert giftCard" class="form-control">
-              </div>
-              <div class="col-xs-5 col-sm-4 col-md-3">
-                <button type="submit" class="btn btn-info pull-right">+ Gift card</button>
-              </div>
-              <div class="col-xs-12"><a href="#" class="bg-link"><strong>Verify your gift card</strong></a></div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
-      </div>
-      <div class="clearfix"></div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-8 col-md-7 col-lg-6 pull-right"><br>
-          <dl class="dl-horizontal finalPrice">
-            <dt class="subtotal"><span>
-                3 products&nbsp;
-                with subtotal of&nbsp;</span></dt>
-            <dd class="subtotal"><span class="price"><strong>€ 465,00</strong></span></dd>
-            <dt class="sconto">sconto&nbsp;<strong>sconto 20%</strong></dt>
-            <dd class="sconto"><span class="price"><strong>- € 93,00</strong></span></dd>
-            <dt class="total">
-              <h2><small>Total payment</small></h2>
-            </dt>
-            <dd class="total price">
-              <h2>€ 372,00</h2>
-            </dd>
-          </dl>
+        <div class="row">
+          <div class="col-xs-12 shipingMethode">
+            <h3><strong>Shipping methode</strong></h3>
+            <div class="form-group">
+              <label for="shipping">shipping</label>
+              <select class="form-control">
+                <option>Corriere espresso € 7,00</option>
+                <option>DHL € 14,00</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 paymentMethode">
+            <h3><strong>Payment methode</strong></h3>
+            <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
+              <div class="panel panel-default">
+                <div id="headingOne" role="tab" class="panel-heading">
+                  <h4 class="panel-title"><span class="label label-info">1</span><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><strong>Pay with credit card</strong></a></h4>
+                </div>
+                <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <div class="securePayment col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center pull-right">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <h4>Acqusti dal Negozzio Ufficiale AC MILAN</h4>
+                          <hr>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                          <h5>Credit cart accepted</h5><img src="assets/images/pagamenti-cartecredito.png" class="img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                          <h5>SECURE PAYMENT</h5>
+                          <svg viewBox="0 0 100 50" width="100" height="50">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#verySign" x="0" y="0"></use>
+                          </svg>
+                        </div>
+                        <hr class="visible-xs-block visible-sm-block">
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <label for="nomeCarta">Nome sulla carta</label>
+                        <input id="nomeCarta" type="text" placeholder="Nome sulla carta" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="numeroCarta">Numero carta</label>
+                        <input id="numeroCarta" type="text" placeholder="Numero carta" class="form-control">
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-xs-9 col-sm-6 col-md-6 col-lg-6">
+                          <label for="country">Data Scadenza</label>
+                          <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <select class="form-control">
+                                <option value="" selected="selected">Month</option>
+                                <option value="1">01 - gennaio</option>
+                                <option value="2">02 - febbraio</option>
+                                <option value="3">03 - marzo</option>
+                                <option value="4">04 - aprile</option>
+                                <option value="5">05 - maggio</option>
+                                <option value="6">06 - giugno</option>
+                                <option value="7">07 - luglio</option>
+                                <option value="8">08 - agosto</option>
+                                <option value="9">09 - settembre</option>
+                                <option value="10">10 - ottobre</option>
+                                <option value="11">11 - novembre</option>
+                                <option value="12">12 - dicembre</option>
+                              </select>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <select class="form-control form-group">
+                                <!--label(for="country") &nbsp;-->
+                                <option value="" selected="selected">Year</option>
+                                <option value="1">2015</option>
+                                <option value="2">2016</option>
+                                <option value="3">2017</option>
+                                <option value="4">2018</option>
+                                <option value="5">2019</option>
+                                <option value="6">2020</option>
+                                <option value="7">2021</option>
+                                <option value="8">2022</option>
+                                <option value="9">2023</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-2 col-md-3 col-lg-2">
+                          <label for="CCV">CCV&nbsp;&nbsp;<a href=""><span class="badge">?</span></a></label>
+                          <input id="CCV" type="text" placeholder="CCV" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div id="headingTwo" role="tab" class="panel-heading">
+                  <h4 class="panel-title"><span class="label label-info">2</span><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed"><strong>Contrassegno</strong></a></h4>
+                </div>
+                <div id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>Costo contrassegno&nbsp;<span class="price"><strong>€ 3,00.</strong></span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div id="headingThree" role="tab" class="panel-heading">
+                  <h4 class="panel-title"><span class="label label-info">3</span><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed"><strong>PayPal</strong></a></h4>
+                </div>
+                <div id="collapseThree" role="tabpanel" aria-labelledby="headingThree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>back into the future	</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 resumeOrder">
+            <h3><strong>Ordine resume</strong></h3>
+                        <div class="row">
+                          <div class="col-sm-2 hidden-xs hidden-sm"><img src="assets/images/thumb01.jpg" class="img-responsive"></div>
+                          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-4">
+                            <h5 class="text-left">
+                              <span:strong>1 x&nbsp;</span:strong><span>Ac Milan Home Authentic Jersey 2015/16</span>
+                            </h5>
+                            <p class="size">Taglia: <strong>S</strong></p><img src="assets/images/thumb01.jpg" class="img-responsive hidden-md hidden-lg">
+                          </div>
+                          <div class="col-xs-6 col-sm-3 col-md-4 col-lg-4">
+                            <h5><strong>Personalizzazione applicata:</strong></h5>
+                            <p>Giocatore: <span class="label label-default">Razvan / 10</span></p>
+                            <p class="price"><strong><em>€ 5.00</em></strong></p>
+                            <h5><strong>Patch applicate:</strong></h5>
+                            <div class="pers">
+                              <p>lega calcio</p>
+                              <p class="price"><strong><em>€ 5,00</em></strong></p>
+                            </div>
+                            <div class="pers">
+                              <p>other patch</p>
+                              <p class="price"><strong><em>€ 5,00</em></strong></p>
+                            </div>
+                          </div>
+                          <!--.col-xs-12-->
+                          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 pull-right">
+                            <h4 class="unitPrice"><strong class="price">€ 150,00</strong></h4>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-2 hidden-xs hidden-sm"><img src="assets/images/thumb02.jpg" class="img-responsive"></div>
+                          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-4">
+                            <h5 class="text-left">
+                              <span:strong>1 x&nbsp;</span:strong><span>Milan Home Jersey 2015/16 Iphone 6</span>
+                            </h5>
+                            <p class="size">Taglia: <strong>universale</strong></p><img src="assets/images/thumb02.jpg" class="img-responsive hidden-md hidden-lg">
+                          </div>
+                          <div class="col-xs-6 col-sm-3 col-md-4 col-lg-4">
+                            <h5><strong>Personalizzazione applicata:</strong></h5>
+                            <p>Giocatore: <span class="label label-default">Razvan / 10</span></p>
+                            <p class="price"><strong><em>€ 5.00</em></strong></p>
+                          </div>
+                          <!--.col-xs-12-->
+                          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 pull-right">
+                            <h4 class="unitPrice"><strong class="price">€ 20,00</strong></h4>
+                          </div>
+                        </div>
+                        <hr>
+            <!--+productImageResume("", "thumb02.jpg", "20,00", "1", flase, true, false)-->
+            <!--+productImageRow("Ac Milan Home Authentic Jersey 2015/16", "thumb01.jpg", "20,00", "")-->
+            <!--+productImageRow("Milan Home Jersey 2015/16 Iphone 6", "thumb02.jpg", "20,00", "")-->
+            <!--+productImageRow("Milan Home Sciarpa", "thumb03.jpg", "20,00", "hidden-xs")-->
+          </div>
+        </div>
+        <div class="clearfix"></div><br>
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-md-7 col-lg-6 shippingCouponGift pull-right">
+            <form class="form-horizontal">
+              <div class="form-group row coupon">
+                <label for="coupon" class="col-xs-12 col-sm-3 col-md-5 control-label"><span class="text-left pull-left">Codice sconto</span></label>
+                <div class="col-xs-7 col-sm-5 col-md-4">
+                  <input type="text" id="coupon" placeholder="insert coupon" class="form-control">
+                </div>
+                <div class="col-xs-5 col-sm-4 col-md-3">
+                  <button type="submit" class="btn btn-info pull-right">+ Coupon</button>
+                </div>
+                <!-- .col-xs-12
+                p Coupon: 
+                	strong FREE SHIPPING
+                -->
+              </div>
+              <div class="form-group row giftCard">
+                <label for="giftCard" class="col-xs-12 col-sm-3 col-md-5 control-label"><span class="text-left pull-left">GIFT card</span></label>
+                <div class="col-xs-7 col-sm-5 col-md-4">
+                  <input type="text" id="giftCard" placeholder="insert giftCard" class="form-control">
+                </div>
+                <div class="col-xs-5 col-sm-4 col-md-3">
+                  <button type="submit" class="btn btn-info pull-right">+ Gift card</button>
+                </div>
+                <div class="col-xs-12"><a href="#" class="bg-link"><strong>Verify your gift card</strong></a></div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-md-7 col-lg-6 pull-right"><br>
+            <dl class="dl-horizontal finalPrice">
+              <dt class="subtotal"><span>
+                  3 products&nbsp;
+                  with subtotal of&nbsp;</span></dt>
+              <dd class="subtotal"><span class="price"><strong>€ 465,00</strong></span></dd>
+              <dt class="sconto">sconto&nbsp;<strong>sconto 20%</strong></dt>
+              <dd class="sconto"><span class="price"><strong>- € 93,00</strong></span></dd>
+              <dt class="total">
+                <h2><small>Total payment</small></h2>
+              </dt>
+              <dd class="total price">
+                <h2>€ 372,00</h2>
+              </dd>
+            </dl>
+          </div>
         </div>
       </div>
     </div>
@@ -584,7 +744,7 @@
             <div class="contentLineDown pull-right">
               <ul class="list-inline">
                 <li><a href="#paypall"><img src="assets/images/payPall.png"></a></li>
-                <li><a href="payment.html" class="btn btn-lg btn-primary">CHECK OUT</a>
+                <li><a href="cart.html" class="btn btn-lg btn-primary">PAY ORDER</a>
                 </li>
               </ul>
             </div>

@@ -104,58 +104,59 @@ mixin province
 	option Vibo Valentia
 	option Vicenza
 	option Viterbo
-.col-xs-12.shippingAdress
-	br
-	p.text-left.message Già registrato?&nbsp;
-		a(href="")
-			strong Clicca qui
-		| &nbsp;per accedere
-	hr
-	h3: strong Indirizzo di spedizione
-	form.row
-		.form-group.col-xs-12.col-sm-6.col-md-6.col-lg-6
-			label(for="name") Name&nbsp;
-				small (nome)
-				//- span.mandatory &nbsp;*
-			input#name.form-control(type="text" placeholder="name")
-		.form-group.col-xs-12.col-sm-6.col-md-6.col-lg-6
-			label(for="firstName") First name&nbsp;
-				small (family name)
-				//- span.mandatory &nbsp;*
-			input#firstName.form-control(type="text" placeholder="firstName")
-		.form-group.col-xs-12.col-sm-6.col-md-6.col-lg-6
-			label(for="email") Email
-				//- span.mandatory &nbsp;*
-			input#email.form-control(type="text" placeholder="email")
-		.form-group.col-xs-12.col-sm-6.col-md-6.col-lg-6
-			label(for="telefono") Telefono
-			input#telefono.form-control(type="text" placeholder="telefono")
-		.form-group.col-xs-12.col-sm-6.col-md-6.col-lg-6
-			label(for="addres") Addres
-				//- span.mandatory &nbsp;*
-			input#addres.form-control(type="text" placeholder="addres")
-		.form-group.col-xs-12.col-sm-6.col-md-6.col-lg-6
-			label(for="beside") Beside
-			input#beside.form-control(type="text" placeholder="secon line")
-			//-button(type="submit" class="btn btn-default") Send invitation
-		.form-group.col-xs-12.col-sm-6.col-md-4.col-lg-3
-			label(for="city") City
-				//- span.mandatory &nbsp;*
-			input#city.form-control(type="text" placeholder="city")
-		.form-group.col-xs-12.col-sm-6.col-md-4.col-lg-3
-			label(for="province") Province
-				//- span.mandatory &nbsp;*
-			//input#province.form-control(type="text" placeholder="province")
-			select.form-control
-				+province
+.row
+	.col-xs-12.shippingAdress
+		br
+		p.text-left.message Già registrato?&nbsp;
+			a(href="")
+				strong Clicca qui
+			| &nbsp;per accedere
+		hr
+		h3: strong Indirizzo di spedizione
+		form.row
+			.form-group.col-xs-12.col-sm-6.col-md-6.col-lg-6
+				label(for="name") Name&nbsp;
+					small (nome)
+					//- span.mandatory &nbsp;*
+				input#name.form-control(type="text" placeholder="name")
+			.form-group.col-xs-12.col-sm-6.col-md-6.col-lg-6
+				label(for="firstName") First name&nbsp;
+					small (family name)
+					//- span.mandatory &nbsp;*
+				input#firstName.form-control(type="text" placeholder="firstName")
+			.form-group.col-xs-12.col-sm-6.col-md-6.col-lg-6
+				label(for="email") Email
+					//- span.mandatory &nbsp;*
+				input#email.form-control(type="text" placeholder="email")
+			.form-group.col-xs-12.col-sm-6.col-md-6.col-lg-6
+				label(for="telefono") Telefono
+				input#telefono.form-control(type="text" placeholder="telefono")
+			.form-group.col-xs-12.col-sm-6.col-md-6.col-lg-6
+				label(for="addres") Addres
+					//- span.mandatory &nbsp;*
+				input#addres.form-control(type="text" placeholder="addres")
+			.form-group.col-xs-12.col-sm-6.col-md-6.col-lg-6
+				label(for="beside") Beside
+				input#beside.form-control(type="text" placeholder="secon line")
+				//-button(type="submit" class="btn btn-default") Send invitation
+			.form-group.col-xs-12.col-sm-6.col-md-4.col-lg-3
+				label(for="city") City
+					//- span.mandatory &nbsp;*
+				input#city.form-control(type="text" placeholder="city")
+			.form-group.col-xs-12.col-sm-6.col-md-4.col-lg-3
+				label(for="province") Province
+					//- span.mandatory &nbsp;*
+				//input#province.form-control(type="text" placeholder="province")
+				select.form-control
+					+province
 
-		.form-group.col-xs-6.col-sm-6.col-md-4.col-lg-3
-			label(for="zip") ZIP
-				//- span.mandatory &nbsp;*
-			input#zip.form-control(type="text" placeholder="zip")
-		.form-group.col-xs-6.col-sm-6.col-md-4.col-lg-3
-			label(for="country") Country
-				//- span.mandatory &nbsp;*
-			select.form-control
-				+country
-		
+			.form-group.col-xs-6.col-sm-6.col-md-4.col-lg-3
+				label(for="zip") ZIP
+					//- span.mandatory &nbsp;*
+				input#zip.form-control(type="text" placeholder="zip")
+			.form-group.col-xs-6.col-sm-6.col-md-4.col-lg-3
+				label(for="country") Country
+					//- span.mandatory &nbsp;*
+				select.form-control
+					+country
+			

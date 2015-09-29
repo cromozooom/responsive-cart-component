@@ -1,4 +1,20 @@
-.col-xs-6.col-sm-6.pull-right
-	h2.text-right
-		small Total
-		.price € 340,00
+.clearfix
+.row
+	.col-xs-12.col-sm-8.col-md-7.col-lg-6.pull-right
+		br
+		dl.dl-horizontal.finalPrice
+			dt.subtotal
+				span
+					| 3 products&nbsp;
+					| with subtotal of&nbsp;
+			dd.subtotal
+				span.price: strong € 465,00
+			dt.sconto
+				| sconto&nbsp;
+				strong sconto 20%
+			dd.sconto
+				span.price: strong - € 93,00
+			dt.total
+				h2: small Total payment
+			dd.total.price
+				h2 € 372,00

@@ -254,23 +254,24 @@ html(lang='en')
 			.container-fluid.no-gutter
 				.container
 					section.contentLineUp
+						.row
 
-						.col-xs-12.col-sm-6
-							h3 YOUR CART
-						.col-xs-12.col-sm-6
-							block checkoutAction
-								ul.list-inline.text-right
-									li
-										a(href="checkOut.html")
-											img(src="#{imagePath}payPall.png")
-									li
-										a.btn.btn-sm.btn-primary(href="checkOut.html")= checkOutBtnCopy
-						.col-xs-12
-							block message
-								p.text-right.message Your carts include&nbsp;
-									strong 3 products&nbsp;
-									| with a total price of&nbsp;
-									span.price: strong € 465,00
+							.col-xs-12.col-sm-6
+								h3 YOUR CART
+							.col-xs-12.col-sm-6
+								block checkoutAction
+									ul.list-inline.text-right
+										li
+											a(href="checkOut.html")
+												img(src="#{imagePath}payPall.png")
+										li
+											a.btn.btn-sm.btn-primary(href="payment.html")= checkOutBtnCopy
+							.col-xs-12
+								block message
+									p.text-right.message Your carts include&nbsp;
+										strong 3 products&nbsp;
+										| with a total price of&nbsp;
+										span.price: strong € 465,00
 			.container.containerTableProd.no-gutter
 
 				//- product 01
@@ -444,61 +445,25 @@ html(lang='en')
 						+productImageRow("Milan Home Sciarpa", "thumb03.jpg", "20,00", "hidden-xs hidden-sm hidden-md")
 
 			.container
-				br
-				.row
-					.col-xs-12.col-sm-6
-					// shipping - coupon & gift
-					.col-xs-12.col-sm-6.shippingCouponGift
-						form.form-horizontal
-							block shipping
-								.form-group.row.shipping
-									label.col-xs-12.col-sm-6.col-md-5.control-label(for="Shipping")
-										span.text-left.pull-left Spese di spedizione
-									//input.form-control( type="text" class="" id="Shipping" placeholder="Italy")
-									.col-xs-12.col-sm-6.col-md-7
-										select.form-control
-											+country
-									//button.btn.btn-default(type="submit")
-									.col-xs-12
-										p.text-right Spedizzione - Coriere expresso: 
-											strong.price € 44,00
-							block coupon
-								.form-group.row.coupon
-									label.col-xs-12.col-sm-3.col-md-5.control-label(for="coupon")
-										span.text-left.pull-left Codice sconto
-									.col-xs-7.col-sm-5.col-md-4
-										input.form-control( type="text" id="coupon" placeholder="insert coupon")
-									.col-xs-5.col-sm-4.col-md-3
-										button.btn.btn-info.pull-right(type="submit") + Coupon
-									// .col-xs-12
-										p Coupon: 
-											strong FREE SHIPPING
+				include include/couponAndGift.jade
+				include include/total
 
-							block giftCard
-								.form-group.row.giftCard
-									label.col-xs-12.col-sm-3.col-md-5.control-label(for="giftCard")
-										span.text-left.pull-left GIFT card
-									.col-xs-7.col-sm-5.col-md-4
-										input.form-control( type="text" id="giftCard" placeholder="insert giftCard")
-									.col-xs-5.col-sm-4.col-md-3
-										button.btn.btn-info.pull-right(type="submit") + Gift card
-									.col-xs-12
-										a.bg-link(href="#")
-											strong Verify your gift card
-
-			.container-fluid.no-gutter
-				.container.no-gutter
-					section.contentLineDown
+			block ctaFooter
+				.container-fluid.no-gutter
+					hr
+					.container
 						.row
 							.col-xs-12.col-sm-12
-								br
-								block message
-								ul.list-inline.text-right
-									li
-										a(href="#paypall")
-											img(src="#{imagePath}payPall.png")
-									li
-										a.btn.btn-lg.btn-primary(href="checkOut.html")= checkOutBtnCopy
+								.contentLineDown.pull-right
+									ul.list-inline
+										li
+											a(href="#paypall")
+												img(src="#{imagePath}payPall.png")
+										li
+											if namepage == "payment"
+												a.btn.btn-lg.btn-primary(href="cart.html")= checkOutBtnCopy
+											if namepage == "cart"
+												a.btn.btn-lg.btn-primary(href="payment.html")= checkOutBtnCopy
 		if namepage == "payment"
 			.container-fluid
 				.container
@@ -511,27 +476,15 @@ html(lang='en')
 									strong 3 products&nbsp;
 									| with a total price of&nbsp;
 									span.price: strong € 465,00
-			.container
-				include include/shippingAdress
-				include include/shippingMethode
-				include include/paymentMethode
-				include include/resumeOrder
-				include include/total
-				.clearfix
-				include include/couponAndGift.jade
-			hr
+				.container
+					include include/shippingAdress
+					include include/shippingMethode
+					include include/paymentMethode
+					include include/resumeOrder
+					include include/couponAndGift.jade
+					include include/total
 
-			.container-fluid.no-gutter
-				.container.no-gutter
-					section.contentLineDown
-						.row
-							.col-xs-12.col-sm-12
-								ul.list-inline.text-right
-									li
-										a(href="#paypall")
-											img(src="#{imagePath}payPall.png")
-									li
-										a.btn.btn-lg.btn-primary(href="cart.html")= checkOutBtnCopy
+			block ctaFooter
 
 		script(src="assets/js/jquery.min.js")
 		script(src="assets/js/bootstrap.min.js")

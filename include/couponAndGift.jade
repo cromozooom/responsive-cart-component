@@ -1,25 +1,43 @@
-.col-xs-12.col-sm-6.shippingCouponGift.pull-right
-	form.form-horizontal
-		block coupon
-			.form-group.row.coupon
-				label.col-xs-12.col-sm-3.col-md-5.control-label(for="coupon")
-					span.text-left.pull-left Codice sconto
-				.col-xs-7.col-sm-5.col-md-4
-					input.form-control( type="text" id="coupon" placeholder="insert coupon")
-				.col-xs-5.col-sm-4.col-md-3
-					button.btn.btn-info.pull-right(type="submit") + Coupon
-				// .col-xs-12
-					p Coupon: 
-						strong FREE SHIPPING
-
-		block giftCard
-			.form-group.row.giftCard
-				label.col-xs-12.col-sm-3.col-md-5.control-label(for="giftCard")
-					span.text-left.pull-left GIFT card
-				.col-xs-7.col-sm-5.col-md-4
-					input.form-control( type="text" id="giftCard" placeholder="insert giftCard")
-				.col-xs-5.col-sm-4.col-md-3
-					button.btn.btn-info.pull-right(type="submit") + Gift card
-				.col-xs-12
-					a.bg-link(href="#")
-						strong Verify your gift card
+.clearfix
+br
+.row
+	.col-xs-12.col-sm-8.col-md-7.col-lg-6.shippingCouponGift.pull-right
+		form.form-horizontal
+			if namepage == "cart"
+				block shppingCost
+					.form-group.row.shipping
+						label.col-xs-12.col-sm-6.col-md-5.control-label(for="Shipping")
+							span.text-left.pull-left Spese di spedizione
+						//input.form-control( type="text" class="" id="Shipping" placeholder="Italy")
+						.col-xs-12.col-sm-6.col-md-7
+							select.form-control
+								+country
+						//button.btn.btn-default(type="submit")
+						.col-xs-12
+							p.text-right Spedizzione - Coriere expresso: 
+								strong.price € 44,00
+				block coupon
+					.form-group.row.coupon
+						label.col-xs-12.col-sm-3.col-md-5.control-label(for="coupon")
+							span.text-left.pull-left Codice sconto
+						.col-xs-7.col-sm-5.col-md-4
+							input.form-control( type="text" id="coupon" placeholder="insert coupon")
+						.col-xs-5.col-sm-4.col-md-3
+							button.btn.btn-info.pull-right(type="submit") + Coupon
+						// .col-xs-12
+							p Coupon: 
+								strong FREE SHIPPING
+				block giftCard
+					.form-group.row.giftCard
+						label.col-xs-12.col-sm-3.col-md-5.control-label(for="giftCard")
+							span.text-left.pull-left GIFT card
+						.col-xs-7.col-sm-5.col-md-4
+							input.form-control( type="text" id="giftCard" placeholder="insert giftCard")
+						.col-xs-5.col-sm-4.col-md-3
+							button.btn.btn-info.pull-right(type="submit") + Gift card
+						.col-xs-12
+							a.bg-link(href="#")
+								strong Verify your gift card
+			if namepage == "payment"
+				block coupon
+				block giftCard

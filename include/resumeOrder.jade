@@ -1,36 +1,37 @@
-.col-xs-12.resumeOrder
-	h3: strong Ordine resume
-	mixin productImageResume(title, image, price, qta, taglia, personalise, patch )
-		.row
-			.col-sm-2.hidden-xs.hidden-sm
-				img.img-responsive(src="#{imagePath}#{image}")
-			.col-xs-6.col-sm-4.col-md-3.col-lg-4
-				h5.text-left
-					span:strong #{qta} x&nbsp;
-					span= title
-				if taglia
-					p.size
-						| Taglia: 
-						strong= taglia
-				img.img-responsive.hidden-md.hidden-lg(src="#{imagePath}#{image}")
-			.col-xs-6.col-sm-3.col-md-4.col-lg-4
-				if personalise
-					+nameNmber ("Giocatore: ", "Razvan / 10", "5.00")
-				if patch
-					h5: strong Patch applicate:
-					+patch ("lega calcio", "5,00")
-					+patch ("other patch", "5,00")
-			//.col-xs-12
+.row
+	.col-xs-12.resumeOrder
+		h3: strong Ordine resume
+		mixin productImageResume(title, image, price, qta, taglia, personalise, patch )
+			.row
+				.col-sm-2.hidden-xs.hidden-sm
+					img.img-responsive(src="#{imagePath}#{image}")
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4
+					h5.text-left
+						span:strong #{qta} x&nbsp;
+						span= title
+					if taglia
+						p.size
+							| Taglia: 
+							strong= taglia
+					img.img-responsive.hidden-md.hidden-lg(src="#{imagePath}#{image}")
+				.col-xs-6.col-sm-3.col-md-4.col-lg-4
+					if personalise
+						+nameNmber ("Giocatore: ", "Razvan / 10", "5.00")
+					if patch
+						h5: strong Patch applicate:
+						+patch ("lega calcio", "5,00")
+						+patch ("other patch", "5,00")
+				//.col-xs-12
 
-			.col-xs-12.col-sm-3.col-md-3.col-lg-2.pull-right
-				h4.unitPrice
-					strong.price € #{price}
-		hr
+				.col-xs-12.col-sm-3.col-md-3.col-lg-2.pull-right
+					h4.unitPrice
+						strong.price € #{price}
+			hr
 
-	+productImageResume("Ac Milan Home Authentic Jersey 2015/16", "thumb01.jpg", "150,00", "1", "S", true, true)
-	+productImageResume("Milan Home Jersey 2015/16 Iphone 6", "thumb02.jpg", "20,00", "1", "universale", true, false)
-	//+productImageResume("", "thumb02.jpg", "20,00", "1", flase, true, false)
+		+productImageResume("Ac Milan Home Authentic Jersey 2015/16", "thumb01.jpg", "150,00", "1", "S", true, true)
+		+productImageResume("Milan Home Jersey 2015/16 Iphone 6", "thumb02.jpg", "20,00", "1", "universale", true, false)
+		//+productImageResume("", "thumb02.jpg", "20,00", "1", flase, true, false)
 
-	//+productImageRow("Ac Milan Home Authentic Jersey 2015/16", "thumb01.jpg", "20,00", "")
-	//+productImageRow("Milan Home Jersey 2015/16 Iphone 6", "thumb02.jpg", "20,00", "")
-	//+productImageRow("Milan Home Sciarpa", "thumb03.jpg", "20,00", "hidden-xs")
+		//+productImageRow("Ac Milan Home Authentic Jersey 2015/16", "thumb01.jpg", "20,00", "")
+		//+productImageRow("Milan Home Jersey 2015/16 Iphone 6", "thumb02.jpg", "20,00", "")
+		//+productImageRow("Milan Home Sciarpa", "thumb03.jpg", "20,00", "hidden-xs")
