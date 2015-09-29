@@ -1,0 +1,90 @@
+.col-xs-12.paymentMethode
+	h3: strong Payment methode
+
+	.panel-group#accordion(role="tablist" aria-multiselectable="true")
+		.panel.panel-default
+			.panel-heading#headingOne(role="tab")
+				h4.panel-title
+					span.label.label-info 1
+					a(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"): strong Pay with credit card
+			#collapseOne.panel-collapse.collapse.in(role="tabpanel" aria-labelledby="headingOne")
+				.panel-body
+					.securePayment.col-xs-12.col-sm-12.col-md-6.col-lg-6.text-center.pull-right
+						.row
+							.col-xs-12
+								h4 Acqusti dal Negozzio Ufficiale AC MILAN
+								hr
+							.col-xs-12.col-sm-6.col-md-6.col-lg-6
+								h5 Credit cart accepted
+								img.img-responsive(src="#{imagePath}pagamenti-cartecredito.png")
+							.col-xs-12.col-sm-6.col-md-6.col-lg-6
+								h5 SECURE PAYMENT
+								svg(viewBox="0 0 100 50" width="100" height="50")
+									use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#verySign" x="0" y="0")
+							hr.visible-xs-block.visible-sm-block
+					.col-xs-12.col-sm-12.col-md-6.col-lg-6
+						.form-group
+							label(for="nomeCarta") Nome sulla carta
+							input#nomeCarta.form-control(type="text" placeholder="Nome sulla carta")
+						.form-group
+							label(for="numeroCarta") Numero carta
+							input#numeroCarta.form-control(type="text" placeholder="Numero carta")
+						.row
+							.form-group.col-xs-9.col-sm-6.col-md-6.col-lg-6
+								label(for="country") Data Scadenza
+								.row
+									.col-xs-6.col-sm-6.col-md-6.col-lg-6
+										select.form-control
+											option(value="" selected="selected") Month
+											option(value="1") 01 - gennaio
+											option(value="2") 02 - febbraio
+											option(value="3") 03 - marzo
+											option(value="4") 04 - aprile
+											option(value="5") 05 - maggio
+											option(value="6") 06 - giugno
+											option(value="7") 07 - luglio
+											option(value="8") 08 - agosto
+											option(value="9") 09 - settembre
+											option(value="10") 10 - ottobre
+											option(value="11") 11 - novembre
+											option(value="12") 12 - dicembre
+									.col-xs-6.col-sm-6.col-md-6.col-lg-6
+										select.form-control.form-group
+											//label(for="country") &nbsp;
+											option(value="" selected="selected") Year
+											option(value="1") 2015
+											option(value="2") 2016
+											option(value="3") 2017
+											option(value="4") 2018
+											option(value="5") 2019
+											option(value="6") 2020
+											option(value="7") 2021
+											option(value="8") 2022
+											option(value="9") 2023
+							.col-xs-3.col-sm-2.col-md-3.col-lg-2
+								label(for="CCV")
+									| CCV&nbsp;&nbsp;
+									a(href="")
+										span.badge ?
+								input#CCV.form-control(type="text" placeholder="CCV")
+
+
+
+		.panel.panel-default
+			.panel-heading#headingTwo(role="tab")
+				h4.panel-title
+					span.label.label-info 2
+					a.collapsed(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"): strong Contrassegno
+
+			#collapseTwo.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingTwo")
+				.panel-body
+					p Costo contrassegno&nbsp;
+						span.price: strong€ 3,00.
+		.panel.panel-default
+			.panel-heading#headingThree(role="tab")
+				h4.panel-title
+					span.label.label-info 3
+					a.collapsed(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"): strong PayPal
+			#collapseThree.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingThree")
+				.panel-body
+					p back into the future	

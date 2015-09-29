@@ -4,10 +4,17 @@ $indent: 10px
 
 @import "titleProdtable";
 
-.shippingAdress, .shipingMethode, .paymentMethode
+// span.mandatory
+//	color: red
+
+.shippingAdress, .shipingMethode, .paymentMethode, .resumeOrder
 	background: white
 	border-top: 5px solid lighten(black, 30%)
 	margin-top: 1em
+
+.resumeOrder
+	img
+		max-width: 100px
 
 .paymentMethode
 	h4 .label
@@ -21,12 +28,20 @@ $indent: 10px
 	color: $priceColor
 	font-size: 1.2em
 
+.relatedProd
+	.price
+		color: lighten(black, 50%)
+
+
 .ProdTable
 	//padding: 0 20px
 	margin-bottom: 2em
 	padding-bottom: .5em
 	background: white
 
+.securePayment
+	img.img-responsive, svg
+		margin: 0 auto
 
 .ProdTable
 	.modifyAction
@@ -141,6 +156,7 @@ $indent: 10px
 			font-size: .85em
 		.btn
 			width: 100%
+
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min)

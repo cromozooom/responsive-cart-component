@@ -1,5 +1,4 @@
 block pageSetUp
-	- namepage =	"payment"
 - lang 						= "en"
 - imagePath 				= "assets/images/"
 - titlePage 				= "Cart AC MILAN"
@@ -26,6 +25,212 @@ mixin productImage(title, link, image, nrProd)
 		p.text-center= title
 		img.img-responsive(src="#{imagePath}#{image}")
 
+mixin country
+	option Afghanistan
+	option Albania
+	option Algeria
+	option Andorra
+	option Angola
+	option Antigua and Barbuda
+	option Argentina
+	option Armenia
+	option Aruba
+	option Australia
+	option Austria
+	option Azerbaijan
+	option Bahamas, The
+	option Bahrain
+	option Bangladesh
+	option Barbados
+	option Belarus
+	option Belgium
+	option Belize
+	option Benin
+	option Bhutan
+	option Bolivia
+	option Bosnia and Herzegovina
+	option Botswana
+	option Brazil
+	option Brunei
+	option Bulgaria
+	option Burkina Faso
+	option Burma
+	option Burundi
+	option Cambodia
+	option Cameroon
+	option Canada
+	option Cape Verde
+	option Central African Republic
+	option Chad
+	option Chile
+	option China
+	option Colombia
+	option Comoros
+	option Congo, Democratic Republic of the
+	option Congo, Republic of the
+	option Costa Rica
+	option Cote d'Ivoire
+	option Croatia
+	option Cuba
+	option Curacao
+	option Cyprus
+	option Czech Republic
+	option Denmark
+	option Djibouti
+	option Dominica
+	option Dominican Republic
+	option East Timor (see Timor-Leste)
+	option Ecuador
+	option Egypt
+	option El Salvador
+	option Equatorial Guinea
+	option Eritrea
+	option Estonia
+	option Ethiopia
+	option Fiji
+	option Finland
+	option France
+	option Gabon
+	option Gambia, The
+	option Georgia
+	option Germany
+	option Ghana
+	option Greece
+	option Grenada
+	option Guatemala
+	option Guinea
+	option Guinea-Bissau
+	option Guyana
+	option Haiti
+	option Holy See
+	option Honduras
+	option Hong Kong
+	option Hungary
+	option Iceland
+	option India
+	option Indonesia
+	option Iran
+	option Iraq
+	option Ireland
+	option Israel
+	option(selected="selected") Italy
+	option Jamaica
+	option Japan
+	option Jordan
+	option Kazakhstan
+	option Kenya
+	option Kiribati
+	option Korea, North
+	option Korea, South
+	option Kosovo
+	option Kuwait
+	option Kyrgyzstan
+	option Laos
+	option Latvia
+	option Lebanon
+	option Lesotho
+	option Liberia
+	option Libya
+	option Liechtenstein
+	option Lithuania
+	option Luxembourg
+	option Macau
+	option Macedonia
+	option Madagascar
+	option Malawi
+	option Malaysia
+	option Maldives
+	option Mali
+	option Malta
+	option Marshall Islands
+	option Mauritania
+	option Mauritius
+	option Mexico
+	option Micronesia
+	option Moldova
+	option Monaco
+	option Mongolia
+	option Montenegro
+	option Morocco
+	option Mozambique
+	option Namibia
+	option Nauru
+	option Nepal
+	option Netherlands
+	option Netherlands Antilles
+	option New Zealand
+	option Nicaragua
+	option Niger
+	option Nigeria
+	option North Korea
+	option Norway
+	option Oman
+	option Pakistan
+	option Palau
+	option Palestinian Territories
+	option Panama
+	option Papua New Guinea
+	option Paraguay
+	option Peru
+	option Philippines
+	option Poland
+	option Portugal
+	option Qatar
+	option Romania
+	option Russia
+	option Rwanda
+	option Saint Kitts and Nevis
+	option Saint Lucia
+	option Saint Vincent and the Grenadines
+	option Samoa
+	option San Marino
+	option Sao Tome and Principe
+	option Saudi Arabia
+	option Senegal
+	option Serbia
+	option Seychelles
+	option Sierra Leone
+	option Singapore
+	option Sint Maarten
+	option Slovakia
+	option Slovenia
+	option Solomon Islands
+	option Somalia
+	option South Africa
+	option South Korea
+	option South Sudan
+	option Spain
+	option Sri Lanka
+	option Sudan
+	option Suriname
+	option Swaziland
+	option Sweden
+	option Switzerland
+	option Syria
+	option Taiwan
+	option Tajikistan
+	option Tanzania
+	option Thailand
+	option Timor-Leste
+	option Togo
+	option Tonga
+	option Trinidad and Tobago
+	option Tunisia
+	option Turkey
+	option Turkmenistan
+	option Tuvalu
+	option Uganda
+	option Ukraine
+	option United Arab Emirates
+	option United Kingdom
+	option Uruguay
+	option Uzbekistan
+	option Vanuatu
+	option Venezuela
+	option Vietnam
+	option Yemen
+	option Zambia
+	option Zimbabwe
 
 doctype html
 html(lang='en')
@@ -42,576 +247,30 @@ html(lang='en')
 		//- fontgoogle
 		link(href="#{googleFonts01}" rel="stylesheet" type="text/css")
 	body(class="#{namepage} cart-checkout")
+		include assets/images/verySign.svg
 		// content here
 		hr
-		.container-fluid.no-gutter
-			.container.no-gutter
-				//- header
-					p.text-center sample header
-
-				section.contentLineUp
-					block topBlock
-						if namepage == "cart"
-
-							- checkOutBtnCopy 			= "CHECK OUT"
-
-							.col-xs-12.col-sm-6
-								h4 CART
-							.col-xs-12.col-sm-6
-								block checkoutAction
-									ul.list-inline.text-right
-										li
-											a(href="checkOut.html")
-												img(src="#{imagePath}payPall.png")
-										li
-											a.btn.btn-sm.btn-primary(href="checkOut.html")= checkOutBtnCopy
-							.col-xs-12
-								block message
-									p.text-right.message Your carts include&nbsp;
-										strong 3 products&nbsp;
-										| with a total price of&nbsp;
-										span.price: strong € 465,00
-						if namepage == "checkOut"
-
-							- checkOutBtnCopy 			= "PAY ORDER"
-
-							.col-xs-12.col-sm-6
-								h4 CHECK OUT
-							.col-xs-12.col-sm-6
-								block checkoutAction
-									ul.list-inline.text-right
-										li
-											a(href="#paypall")
-												img(src="#{imagePath}payPall.png")
-										li
-											a.btn.btn-sm.btn-primary(href="cart.html")= checkOutBtnCopy
-							.col-xs-12
-								block message
-									p.text-right.message Your cart include&nbsp;
-										strong 3 products&nbsp;
-										| with a total price of&nbsp;
-										span.price: strong € 465,00
-						if namepage == "payment"
-
-							- checkOutBtnCopy 			= "PAY ORDER"
-
-							.col-xs-12
-								h4 Pay order
-								p.text-left.message Già registrato?&nbsp;
-									a(href="")
-										strong Clicca qui
-									| &nbsp;per accedere
-		if namepage == "payment"
-			.container
-				.col-xs-12.shippingAdress
-					h3: strong Indirizzo di spedizione
-					form.row
-						.form-group.col-xs-12.col-sm-6.col-md-4.col-lg-6
-							label(for="name") Name&nbsp;
-								small (nome)
-							input#name.form-control(type="text" placeholder="name")
-						.form-group.col-xs-12.col-sm-6.col-md-4.col-lg-6
-							label(for="firstName") First name&nbsp;
-								small (family name)
-							input#firstName.form-control(type="text" placeholder="firstName")
-						.form-group.col-xs-12.col-sm-6.col-md-4.col-lg-6
-							label(for="email") Email
-							input#email.form-control(type="text" placeholder="email")
-						.form-group.col-xs-12.col-sm-6.col-md-4.col-lg-6
-							label(for="telefono") Telefono
-							input#telefono.form-control(type="text" placeholder="telefono")
-						.form-group.col-xs-12.col-sm-6.col-md-4.col-lg-4
-							label(for="addres") Addres
-							input#addres.form-control(type="text" placeholder="addres")
-						.form-group.col-xs-12.col-sm-6.col-md-4.col-lg-2
-							label(for="city") City
-							input#city.form-control(type="text" placeholder="city")
-						.form-group.col-xs-12.col-sm-6.col-md-4.col-lg-2
-							label(for="province") Province
-							//input#province.form-control(type="text" placeholder="province")
-							select.form-control
-								option Agrigento
-								option Alessandria
-								option Ancona
-								option Arezzo
-								option Ascoli Piceno
-								option Asti
-								option Avellino
-								option Bari
-								option Barletta-Andria-Trani
-								option Belluno
-								option Benevento
-								option Bergamo
-								option Biella
-								option Bologna
-								option Brescia
-								option Brindisi
-								option Cagliari
-								option Caltanissetta
-								option Campobasso
-								option Carbonia-Iglesias
-								option Caserta
-								option Catania
-								option Catanzaro
-								option Chieti
-								option Como
-								option Cosenza
-								option Cremona
-								option Crotone
-								option Cuneo
-								option Enna
-								option Fermo
-								option Ferrara
-								option Florence
-								option Foggia
-								option Forlì-Cesena
-								option Frosinone
-								option Genoa
-								option Gorizia
-								option Grosseto
-								option Imperia
-								option Isernia
-								option La Spezia
-								option L'Aquila
-								option Latina
-								option Lecce
-								option Lecco
-								option Livorno
-								option Lodi
-								option Lucca
-								option Macerata
-								option Mantua
-								option Massa and Carrara
-								option Matera
-								option Medio Campidano
-								option Messina
-								option Milan
-								option Modena
-								option Monza and Brianza
-								option Naples
-								option Novara
-								option Nuoro
-								option Ogliastra
-								option Olbia-Tempio
-								option Oristano
-								option Padua
-								option Palermo
-								option Parma
-								option Pavia
-								option Perugia
-								option Pesaro and Urbino</a
-								option Pescara
-								option Piacenza
-								option Pisa
-								option Pistoia
-								option Pordenone
-								option Potenza
-								option Prato
-								option Ragusa
-								option Ravenna
-								option Reggio Calabria
-								option Reggio Emilia
-								option Rieti
-								option Rome
-								option Rovigo
-								option Salerno
-								option Sassari
-								option Savona
-								option Siena
-								option Sondrio
-								option Syracuse
-								option Taranto
-								option Teramo
-								option Terni
-								option Trapani
-								option Treviso
-								option Trieste
-								option Turin
-								option Varese
-								option Venice
-								option Verbano-Cusio-Ossola
-								option Vercelli
-								option Verona
-								option Vibo Valentia
-								option Vicenza
-								option Viterbo
-						.form-group.col-xs-12.col-sm-6.col-md-4.col-lg-2
-							label(for="zip") ZIP
-							input#zip.form-control(type="text" placeholder="zip")
-						.form-group.col-xs-12.col-sm-6.col-md-4.col-lg-2
-							label(for="country") Country
-							select.form-control
-								option Afghanistan
-								option Albania
-								option Algeria
-								option Andorra
-								option Angola
-								option Antigua and Barbuda
-								option Argentina
-								option Armenia
-								option Aruba
-								option Australia
-								option Austria
-								option Azerbaijan
-								option Bahamas, The
-								option Bahrain
-								option Bangladesh
-								option Barbados
-								option Belarus
-								option Belgium
-								option Belize
-								option Benin
-								option Bhutan
-								option Bolivia
-								option Bosnia and Herzegovina
-								option Botswana
-								option Brazil
-								option Brunei
-								option Bulgaria
-								option Burkina Faso
-								option Burma
-								option Burundi
-								option Cambodia
-								option Cameroon
-								option Canada
-								option Cape Verde
-								option Central African Republic
-								option Chad
-								option Chile
-								option China
-								option Colombia
-								option Comoros
-								option Congo, Democratic Republic of the
-								option Congo, Republic of the
-								option Costa Rica
-								option Cote d'Ivoire
-								option Croatia
-								option Cuba
-								option Curacao
-								option Cyprus
-								option Czech Republic
-								option Denmark
-								option Djibouti
-								option Dominica
-								option Dominican Republic
-								option East Timor (see Timor-Leste)
-								option Ecuador
-								option Egypt
-								option El Salvador
-								option Equatorial Guinea
-								option Eritrea
-								option Estonia
-								option Ethiopia
-								option Fiji
-								option Finland
-								option France
-								option Gabon
-								option Gambia, The
-								option Georgia
-								option Germany
-								option Ghana
-								option Greece
-								option Grenada
-								option Guatemala
-								option Guinea
-								option Guinea-Bissau
-								option Guyana
-								option Haiti
-								option Holy See
-								option Honduras
-								option Hong Kong
-								option Hungary
-								option Iceland
-								option India
-								option Indonesia
-								option Iran
-								option Iraq
-								option Ireland
-								option Israel
-								option Italy
-								option Jamaica
-								option Japan
-								option Jordan
-								option Kazakhstan
-								option Kenya
-								option Kiribati
-								option Korea, North
-								option Korea, South
-								option Kosovo
-								option Kuwait
-								option Kyrgyzstan
-								option Laos
-								option Latvia
-								option Lebanon
-								option Lesotho
-								option Liberia
-								option Libya
-								option Liechtenstein
-								option Lithuania
-								option Luxembourg
-								option Macau
-								option Macedonia
-								option Madagascar
-								option Malawi
-								option Malaysia
-								option Maldives
-								option Mali
-								option Malta
-								option Marshall Islands
-								option Mauritania
-								option Mauritius
-								option Mexico
-								option Micronesia
-								option Moldova
-								option Monaco
-								option Mongolia
-								option Montenegro
-								option Morocco
-								option Mozambique
-								option Namibia
-								option Nauru
-								option Nepal
-								option Netherlands
-								option Netherlands Antilles
-								option New Zealand
-								option Nicaragua
-								option Niger
-								option Nigeria
-								option North Korea
-								option Norway
-								option Oman
-								option Pakistan
-								option Palau
-								option Palestinian Territories
-								option Panama
-								option Papua New Guinea
-								option Paraguay
-								option Peru
-								option Philippines
-								option Poland
-								option Portugal
-								option Qatar
-								option Romania
-								option Russia
-								option Rwanda
-								option Saint Kitts and Nevis
-								option Saint Lucia
-								option Saint Vincent and the Grenadines
-								option Samoa
-								option San Marino
-								option Sao Tome and Principe
-								option Saudi Arabia
-								option Senegal
-								option Serbia
-								option Seychelles
-								option Sierra Leone
-								option Singapore
-								option Sint Maarten
-								option Slovakia
-								option Slovenia
-								option Solomon Islands
-								option Somalia
-								option South Africa
-								option South Korea
-								option South Sudan
-								option Spain
-								option Sri Lanka
-								option Sudan
-								option Suriname
-								option Swaziland
-								option Sweden
-								option Switzerland
-								option Syria
-								option Taiwan
-								option Tajikistan
-								option Tanzania
-								option Thailand
-								option Timor-Leste
-								option Togo
-								option Tonga
-								option Trinidad and Tobago
-								option Tunisia
-								option Turkey
-								option Turkmenistan
-								option Tuvalu
-								option Uganda
-								option Ukraine
-								option United Arab Emirates
-								option United Kingdom
-								option Uruguay
-								option Uzbekistan
-								option Vanuatu
-								option Venezuela
-								option Vietnam
-								option Yemen
-								option Zambia
-								option Zimbabwe
-						.form-group.col-xs-12.col-sm-6.col-md-4.col-lg-4
-							label(for="beside") Beside
-							input#beside.form-control(type="text" placeholder="beside")
-							//-button(type="submit" class="btn btn-default") Send invitation
-				.col-xs-12.shipingMethode
-					h3: strong Shipping methode
-					.form-group
-						label(for="shipping") shipping
-						select.form-control
-							option Corriere espresso € 7,00
-							option DHL € 14,00
-				.col-xs-12.paymentMethode
-					h3: strong Payment methode
-
-					.panel-group#accordion(role="tablist" aria-multiselectable="true")
-						.panel.panel-default
-							.panel-heading#headingOne(role="tab")
-								h4.panel-title
-									span.label.label-info 1
-									a(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"): strong Pay with credit card
-							#collapseOne.panel-collapse.collapse.in(role="tabpanel" aria-labelledby="headingOne")
-								.panel-body
-									.col-xs-12.col-sm-12.col-md-7.col-lg-6
-										.form-group
-											label(for="nomeCarta") Nome sulla carta
-											input#nomeCarta.form-control(type="text" placeholder="Nome sulla carta")
-										.form-group
-											label(for="numeroCarta") Numero carta
-											input#numeroCarta.form-control(type="text" placeholder="Numero carta")
-										.row
-											.form-group.col-xs-6.col-sm-4
-												label(for="country") Data Scadenza
-												select.form-control
-													option(value="" selected="selected") Month
-													option(value="1") 01 - gennaio
-													option(value="2") 02 - febbraio
-													option(value="3") 03 - marzo
-													option(value="4") 04 - aprile
-													option(value="5") 05 - maggio
-													option(value="6") 06 - giugno
-													option(value="7") 07 - luglio
-													option(value="8") 08 - agosto
-													option(value="9") 09 - settembre
-													option(value="10") 10 - ottobre
-													option(value="11") 11 - novembre
-													option(value="12") 12 - dicembre
-											.form-group.col-xs-6.col-sm-4
-												label(for="country") &nbsp;
-												select.form-control
-													option(value="" selected="selected") Year
-													option(value="1") 2015
-													option(value="2") 2016
-													option(value="3") 2017
-													option(value="4") 2018
-													option(value="5") 2019
-													option(value="6") 2020
-													option(value="7") 2021
-													option(value="8") 2022
-													option(value="9") 2023
-											.form-group.col-xs-12.col-sm-4
-												label(for="numeroVerifica") Verification code
-												input#numeroVerifica.form-control(type="text" placeholder="numeroVerifica")
-
-
-						.panel.panel-default
-							.panel-heading#headingTwo(role="tab")
-								h4.panel-title
-									span.label.label-info 2
-									a.collapsed(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"): strong Contrassegno
-
-							#collapseTwo.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingTwo")
-								.panel-body
-									p Costo contrassegno&nbsp;
-										span.price: strong€ 3,00.
-						.panel.panel-default
-							.panel-heading#headingThree(role="tab")
-								h4.panel-title
-									span.label.label-info 3
-									a.collapsed(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"): strong PayPal
-							#collapseThree.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingThree")
-								.panel-body
-									p back into the future
-				.col-xs-12.paymentMethode
-					h3: strong Ordine resume
-					mixin productImageResume(title, image, price, qta, taglia, personalise, patch )
-						.row
-							.col-sm-2.hidden-xs.hidden-sm
-								img.img-responsive(src="#{imagePath}#{image}")
-							.col-xs-6.col-sm-4.col-md-3.col-lg-4
-								h5.text-left
-									span:strong #{qta} x&nbsp;
-									span= title
-								if taglia
-									p.size
-										| Taglia: 
-										strong= taglia
-								img.img-responsive.hidden-md.hidden-lg(src="#{imagePath}#{image}")
-							.col-xs-6.col-sm-4.col-md-4.col-lg-4
-								if personalise
-									+nameNmber ("Giocatore: ", "Razvan / 10", "5.00")
-								if patch
-									h5: strong Patch applicate:
-									+patch ("lega calcio", "5,00")
-									+patch ("other patch", "5,00")
-							//.col-xs-12
-
-							.col-xs-12.col-sm-2.col-md-3.col-lg-2.pull-right
-								h4.unitPrice
-									strong.price € #{price}
-						hr
-
-					+productImageResume("Ac Milan Home Authentic Jersey 2015/16", "thumb01.jpg", "150,00", "1", "S", true, true)
-					+productImageResume("Milan Home Jersey 2015/16 Iphone 6", "thumb02.jpg", "20,00", "1", "universale", true, false)
-					//+productImageResume("", "thumb02.jpg", "20,00", "1", flase, true, false)
-
-					//+productImageRow("Ac Milan Home Authentic Jersey 2015/16", "thumb01.jpg", "20,00", "")
-					//+productImageRow("Milan Home Jersey 2015/16 Iphone 6", "thumb02.jpg", "20,00", "")
-					//+productImageRow("Milan Home Sciarpa", "thumb03.jpg", "20,00", "hidden-xs")
-
-				.col-xs-12.col-sm-12
-					h2.text-right
-						small Total
-						.price € 340,00
-					// shipping - coupon & gift
-				.col-xs-12.col-sm-6
-
-				.col-xs-12.col-sm-6.shippingCouponGift
-					form.form-horizontal
-						block coupon
-							.form-group.row.coupon
-								label.col-xs-12.col-sm-3.col-md-5.control-label(for="coupon")
-									span.text-left.pull-left Codice sconto
-								.col-xs-7.col-sm-5.col-md-4
-									input.form-control( type="text" id="coupon" placeholder="insert coupon")
-								.col-xs-5.col-sm-4.col-md-3
-									button.btn.btn-info.pull-right(type="submit") + Coupon
-								// .col-xs-12
-									p Coupon: 
-										strong FREE SHIPPING
-
-						block giftCard
-							.form-group.row.giftCard
-								label.col-xs-12.col-sm-3.col-md-5.control-label(for="giftCard")
-									span.text-left.pull-left GIFT card
-								.col-xs-7.col-sm-5.col-md-4
-									input.form-control( type="text" id="giftCard" placeholder="insert giftCard")
-								.col-xs-5.col-sm-4.col-md-3
-									button.btn.btn-info.pull-right(type="submit") + Gift card
-								.col-xs-12
-									a.bg-link(href="#")
-										strong Verify your gift card
-			hr
+		if namepage == "cart"
 			.container-fluid.no-gutter
-				.container.no-gutter
-					section.contentLineDown
-						.row
-							.col-xs-12.col-sm-12
+				.container
+					section.contentLineUp
+
+						.col-xs-12.col-sm-6
+							h3 YOUR CART
+						.col-xs-12.col-sm-6
+							block checkoutAction
 								ul.list-inline.text-right
 									li
-										a(href="#paypall")
+										a(href="checkOut.html")
 											img(src="#{imagePath}payPall.png")
 									li
-										a.btn.btn-lg.btn-primary(href="checkOut.html")= checkOutBtnCopy
-
-
-		if namepage == "cart"
+										a.btn.btn-sm.btn-primary(href="checkOut.html")= checkOutBtnCopy
+						.col-xs-12
+							block message
+								p.text-right.message Your carts include&nbsp;
+									strong 3 products&nbsp;
+									| with a total price of&nbsp;
+									span.price: strong € 465,00
 			.container.containerTableProd.no-gutter
 
 				//- product 01
@@ -769,8 +428,7 @@ html(lang='en')
 							br
 							h5.text-center: strong Related products
 					hr
-					.row
-
+					.row.relatedProd
 						mixin productImageRow(title, image, price, hide)
 							.col-xs-6.col-sm-4.col-md-3.col-lg-2(class="#{hide}")
 								img.img-responsive(src="#{imagePath}#{image}")
@@ -785,11 +443,9 @@ html(lang='en')
 						+productImageRow("Milan Home Jersey 2015/16 Iphone 6", "thumb02.jpg", "20,00", "hidden-xs hidden-sm hidden-md")
 						+productImageRow("Milan Home Sciarpa", "thumb03.jpg", "20,00", "hidden-xs hidden-sm hidden-md")
 
-
-		if namepage == "cart"
 			.container
+				br
 				.row
-
 					.col-xs-12.col-sm-6
 					// shipping - coupon & gift
 					.col-xs-12.col-sm-6.shippingCouponGift
@@ -801,214 +457,10 @@ html(lang='en')
 									//input.form-control( type="text" class="" id="Shipping" placeholder="Italy")
 									.col-xs-12.col-sm-6.col-md-7
 										select.form-control
-											option Afghanistan
-											option Albania
-											option Algeria
-											option Andorra
-											option Angola
-											option Antigua and Barbuda
-											option Argentina
-											option Armenia
-											option Aruba
-											option Australia
-											option Austria
-											option Azerbaijan
-											option Bahamas, The
-											option Bahrain
-											option Bangladesh
-											option Barbados
-											option Belarus
-											option Belgium
-											option Belize
-											option Benin
-											option Bhutan
-											option Bolivia
-											option Bosnia and Herzegovina
-											option Botswana
-											option Brazil
-											option Brunei
-											option Bulgaria
-											option Burkina Faso
-											option Burma
-											option Burundi
-											option Cambodia
-											option Cameroon
-											option Canada
-											option Cape Verde
-											option Central African Republic
-											option Chad
-											option Chile
-											option China
-											option Colombia
-											option Comoros
-											option Congo, Democratic Republic of the
-											option Congo, Republic of the
-											option Costa Rica
-											option Cote d'Ivoire
-											option Croatia
-											option Cuba
-											option Curacao
-											option Cyprus
-											option Czech Republic
-											option Denmark
-											option Djibouti
-											option Dominica
-											option Dominican Republic
-											option East Timor (see Timor-Leste)
-											option Ecuador
-											option Egypt
-											option El Salvador
-											option Equatorial Guinea
-											option Eritrea
-											option Estonia
-											option Ethiopia
-											option Fiji
-											option Finland
-											option France
-											option Gabon
-											option Gambia, The
-											option Georgia
-											option Germany
-											option Ghana
-											option Greece
-											option Grenada
-											option Guatemala
-											option Guinea
-											option Guinea-Bissau
-											option Guyana
-											option Haiti
-											option Holy See
-											option Honduras
-											option Hong Kong
-											option Hungary
-											option Iceland
-											option India
-											option Indonesia
-											option Iran
-											option Iraq
-											option Ireland
-											option Israel
-											option Italy
-											option Jamaica
-											option Japan
-											option Jordan
-											option Kazakhstan
-											option Kenya
-											option Kiribati
-											option Korea, North
-											option Korea, South
-											option Kosovo
-											option Kuwait
-											option Kyrgyzstan
-											option Laos
-											option Latvia
-											option Lebanon
-											option Lesotho
-											option Liberia
-											option Libya
-											option Liechtenstein
-											option Lithuania
-											option Luxembourg
-											option Macau
-											option Macedonia
-											option Madagascar
-											option Malawi
-											option Malaysia
-											option Maldives
-											option Mali
-											option Malta
-											option Marshall Islands
-											option Mauritania
-											option Mauritius
-											option Mexico
-											option Micronesia
-											option Moldova
-											option Monaco
-											option Mongolia
-											option Montenegro
-											option Morocco
-											option Mozambique
-											option Namibia
-											option Nauru
-											option Nepal
-											option Netherlands
-											option Netherlands Antilles
-											option New Zealand
-											option Nicaragua
-											option Niger
-											option Nigeria
-											option North Korea
-											option Norway
-											option Oman
-											option Pakistan
-											option Palau
-											option Palestinian Territories
-											option Panama
-											option Papua New Guinea
-											option Paraguay
-											option Peru
-											option Philippines
-											option Poland
-											option Portugal
-											option Qatar
-											option Romania
-											option Russia
-											option Rwanda
-											option Saint Kitts and Nevis
-											option Saint Lucia
-											option Saint Vincent and the Grenadines
-											option Samoa
-											option San Marino
-											option Sao Tome and Principe
-											option Saudi Arabia
-											option Senegal
-											option Serbia
-											option Seychelles
-											option Sierra Leone
-											option Singapore
-											option Sint Maarten
-											option Slovakia
-											option Slovenia
-											option Solomon Islands
-											option Somalia
-											option South Africa
-											option South Korea
-											option South Sudan
-											option Spain
-											option Sri Lanka
-											option Sudan
-											option Suriname
-											option Swaziland
-											option Sweden
-											option Switzerland
-											option Syria
-											option Taiwan
-											option Tajikistan
-											option Tanzania
-											option Thailand
-											option Timor-Leste
-											option Togo
-											option Tonga
-											option Trinidad and Tobago
-											option Tunisia
-											option Turkey
-											option Turkmenistan
-											option Tuvalu
-											option Uganda
-											option Ukraine
-											option United Arab Emirates
-											option United Kingdom
-											option Uruguay
-											option Uzbekistan
-											option Vanuatu
-											option Venezuela
-											option Vietnam
-											option Yemen
-											option Zambia
-											option Zimbabwe
+											+country
 									//button.btn.btn-default(type="submit")
 									.col-xs-12
-										p Spedizzione - Coriere expresso: 
+										p.text-right Spedizzione - Coriere expresso: 
 											strong.price € 44,00
 							block coupon
 								.form-group.row.coupon
@@ -1039,6 +491,7 @@ html(lang='en')
 					section.contentLineDown
 						.row
 							.col-xs-12.col-sm-12
+								br
 								block message
 								ul.list-inline.text-right
 									li
@@ -1046,6 +499,39 @@ html(lang='en')
 											img(src="#{imagePath}payPall.png")
 									li
 										a.btn.btn-lg.btn-primary(href="checkOut.html")= checkOutBtnCopy
+		if namepage == "payment"
+			.container-fluid
+				.container
+					section.contentLineUp
+						- checkOutBtnCopy 			= "PAY ORDER"
+						.row
+							.col-xs-12
+								h3 Pay your order
+								p.message Your cart include&nbsp;
+									strong 3 products&nbsp;
+									| with a total price of&nbsp;
+									span.price: strong € 465,00
+			.container
+				include include/shippingAdress
+				include include/shippingMethode
+				include include/paymentMethode
+				include include/resumeOrder
+				include include/total
+				.clearfix
+				include include/couponAndGift.jade
+			hr
+
+			.container-fluid.no-gutter
+				.container.no-gutter
+					section.contentLineDown
+						.row
+							.col-xs-12.col-sm-12
+								ul.list-inline.text-right
+									li
+										a(href="#paypall")
+											img(src="#{imagePath}payPall.png")
+									li
+										a.btn.btn-lg.btn-primary(href="cart.html")= checkOutBtnCopy
 
 		script(src="assets/js/jquery.min.js")
 		script(src="assets/js/bootstrap.min.js")

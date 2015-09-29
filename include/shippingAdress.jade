@@ -1,0 +1,161 @@
+mixin province
+	option Agrigento
+	option Alessandria
+	option Ancona
+	option Arezzo
+	option Ascoli Piceno
+	option Asti
+	option Avellino
+	option Bari
+	option Barletta-Andria-Trani
+	option Belluno
+	option Benevento
+	option Bergamo
+	option Biella
+	option Bologna
+	option Brescia
+	option Brindisi
+	option Cagliari
+	option Caltanissetta
+	option Campobasso
+	option Carbonia-Iglesias
+	option Caserta
+	option Catania
+	option Catanzaro
+	option Chieti
+	option Como
+	option Cosenza
+	option Cremona
+	option Crotone
+	option Cuneo
+	option Enna
+	option Fermo
+	option Ferrara
+	option Florence
+	option Foggia
+	option Forlì-Cesena
+	option Frosinone
+	option Genoa
+	option Gorizia
+	option Grosseto
+	option Imperia
+	option Isernia
+	option La Spezia
+	option L'Aquila
+	option Latina
+	option Lecce
+	option Lecco
+	option Livorno
+	option Lodi
+	option Lucca
+	option Macerata
+	option Mantua
+	option Massa and Carrara
+	option Matera
+	option Medio Campidano
+	option Messina
+	option Milan
+	option Modena
+	option Monza and Brianza
+	option Naples
+	option Novara
+	option Nuoro
+	option Ogliastra
+	option Olbia-Tempio
+	option Oristano
+	option Padua
+	option Palermo
+	option Parma
+	option Pavia
+	option Perugia
+	option Pesaro and Urbino</a
+	option Pescara
+	option Piacenza
+	option Pisa
+	option Pistoia
+	option Pordenone
+	option Potenza
+	option Prato
+	option Ragusa
+	option Ravenna
+	option Reggio Calabria
+	option Reggio Emilia
+	option Rieti
+	option Rome
+	option Rovigo
+	option Salerno
+	option Sassari
+	option Savona
+	option Siena
+	option Sondrio
+	option Syracuse
+	option Taranto
+	option Teramo
+	option Terni
+	option Trapani
+	option Treviso
+	option Trieste
+	option Turin
+	option Varese
+	option Venice
+	option Verbano-Cusio-Ossola
+	option Vercelli
+	option Verona
+	option Vibo Valentia
+	option Vicenza
+	option Viterbo
+.col-xs-12.shippingAdress
+	br
+	p.text-left.message Già registrato?&nbsp;
+		a(href="")
+			strong Clicca qui
+		| &nbsp;per accedere
+	hr
+	h3: strong Indirizzo di spedizione
+	form.row
+		.form-group.col-xs-12.col-sm-6.col-md-6.col-lg-6
+			label(for="name") Name&nbsp;
+				small (nome)
+				//- span.mandatory &nbsp;*
+			input#name.form-control(type="text" placeholder="name")
+		.form-group.col-xs-12.col-sm-6.col-md-6.col-lg-6
+			label(for="firstName") First name&nbsp;
+				small (family name)
+				//- span.mandatory &nbsp;*
+			input#firstName.form-control(type="text" placeholder="firstName")
+		.form-group.col-xs-12.col-sm-6.col-md-6.col-lg-6
+			label(for="email") Email
+				//- span.mandatory &nbsp;*
+			input#email.form-control(type="text" placeholder="email")
+		.form-group.col-xs-12.col-sm-6.col-md-6.col-lg-6
+			label(for="telefono") Telefono
+			input#telefono.form-control(type="text" placeholder="telefono")
+		.form-group.col-xs-12.col-sm-6.col-md-6.col-lg-6
+			label(for="addres") Addres
+				//- span.mandatory &nbsp;*
+			input#addres.form-control(type="text" placeholder="addres")
+		.form-group.col-xs-12.col-sm-6.col-md-6.col-lg-6
+			label(for="beside") Beside
+			input#beside.form-control(type="text" placeholder="secon line")
+			//-button(type="submit" class="btn btn-default") Send invitation
+		.form-group.col-xs-12.col-sm-6.col-md-4.col-lg-3
+			label(for="city") City
+				//- span.mandatory &nbsp;*
+			input#city.form-control(type="text" placeholder="city")
+		.form-group.col-xs-12.col-sm-6.col-md-4.col-lg-3
+			label(for="province") Province
+				//- span.mandatory &nbsp;*
+			//input#province.form-control(type="text" placeholder="province")
+			select.form-control
+				+province
+
+		.form-group.col-xs-6.col-sm-6.col-md-4.col-lg-3
+			label(for="zip") ZIP
+				//- span.mandatory &nbsp;*
+			input#zip.form-control(type="text" placeholder="zip")
+		.form-group.col-xs-6.col-sm-6.col-md-4.col-lg-3
+			label(for="country") Country
+				//- span.mandatory &nbsp;*
+			select.form-control
+				+country
+		
