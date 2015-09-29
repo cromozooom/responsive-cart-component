@@ -431,7 +431,7 @@ html(lang='en')
 					hr
 					.row.relatedProd
 						mixin productImageRow(title, image, price, hide)
-							.col-xs-6.col-sm-4.col-md-3.col-lg-2(class="#{hide}")
+							.col-xs-4.col-sm-3.col-md-3.col-lg-2(class="#{hide}")
 								img.img-responsive(src="#{imagePath}#{image}")
 								strong.price € #{price}
 								a.btn.btn-link(href="#"): strong + To cart
