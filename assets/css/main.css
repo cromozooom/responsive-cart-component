@@ -6831,21 +6831,21 @@ button.close {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  /* line 167, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+  /* line 194, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
   .cart-checkout .unitPrice {
     float: right; }
 
-  /* line 171, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+  /* line 198, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
   .shippingCouponGift label span {
     font-size: 0.85em; }
-  /* line 173, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+  /* line 200, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
   .shippingCouponGift .btn {
     width: 100%; }
  }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  /* line 181, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+  /* line 208, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
   .ProdTable .modifyAction a {
     width: auto;
     float: left;
@@ -6855,10 +6855,10 @@ button.close {
     margin-left: 1em;
     margin-top: 1em; }
 
-  /* line 190, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+  /* line 217, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
   .shippingCouponGift label span {
     font-size: 0.85em; }
-  /* line 192, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
+  /* line 219, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/3-modules/cartProduct */
   .shippingCouponGift .btn {
     width: 100%; }
  }

@@ -272,6 +272,20 @@ html(lang='en')
 										strong 3 products&nbsp;
 										| with a total price of&nbsp;
 										span.price: strong € 465,00
+
+			block add
+				.container-fluid.no-gutter.add
+					.container.no-gutter
+						.row
+							hr
+							.col-xs-12.text-center
+								h4 Use this coupon&nbsp;
+									span.label.label-primary
+										i FREESHIP
+									| &nbspfor free shipping
+								p available only for order over&nbsp;
+									strong 110 €
+
 			.container.containerTableProd.no-gutter
 
 				//- product 01
@@ -439,8 +453,8 @@ html(lang='en')
 
 						+productImageRow("Ac Milan Home Authentic Jersey 2015/16", "thumb01.jpg", "20,00", "")
 						+productImageRow("Milan Home Jersey 2015/16 Iphone 6", "thumb02.jpg", "20,00", "")
-						+productImageRow("Milan Home Sciarpa", "thumb03.jpg", "20,00", "hidden-xs")
-						+productImageRow("Ac Milan Home Authentic Jersey 2015/16", "thumb01.jpg", "20,00", "hidden-xs hidden-sm")
+						+productImageRow("Milan Home Sciarpa", "thumb03.jpg", "20,00", "")
+						+productImageRow("Ac Milan Home Authentic Jersey 2015/16", "thumb01.jpg", "20,00", "hidden-md")
 						+productImageRow("Milan Home Jersey 2015/16 Iphone 6", "thumb02.jpg", "20,00", "hidden-xs hidden-sm hidden-md")
 						+productImageRow("Milan Home Sciarpa", "thumb03.jpg", "20,00", "hidden-xs hidden-sm hidden-md")
 
@@ -476,6 +490,8 @@ html(lang='en')
 									strong 3 products&nbsp;
 									| with a total price of&nbsp;
 									span.price: strong € 465,00
+			block add
+			.container-fluid
 				.container
 					include include/shippingAdress
 					include include/shippingMethode
