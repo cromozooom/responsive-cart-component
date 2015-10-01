@@ -145,7 +145,7 @@
         <div class="row">
           <hr>
           <div class="col-xs-12 text-center">
-            <h4>Use this coupon&nbsp;<span class="label label-primary">FREESHIP</span>&nbspfor free shipping</h4>
+            <h4>Use this coupon&nbsp;<span class="label label-primary"><i>FREESHIP</i></span>&nbspfor free shipping</h4>
             <p>available only for order over&nbsp;<strong>110 €</strong></p>
           </div>
         </div>
@@ -537,7 +537,112 @@
         </div>
         <div class="row">
           <div class="col-xs-12 paymentMethode">
-            <h3><strong>Payment methode</strong></h3>
+            <h3><strong>Payment methode v01</strong></h3>
+            <ul role="tablist" class="nav nav-tabs">
+              <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><span class="label label-info">1</span>&nbsp;&nbsp;Credit Card</a></li>
+              <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><span class="label label-info">2</span>&nbsp;&nbsp;Paypall</a></li>
+              <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><span class="label label-info">3</span>&nbsp;&nbsp;Contrassegno</a></li>
+            </ul>
+            <div class="tab-content">
+              <div id="home" role="tabpanel" class="tab-pane active">
+                <div class="row">
+                  <div class="securePayment col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center pull-right">
+                    <div class="row">
+                      <div class="col-xs-12"><br>
+                        <h4>Acqusti dal Negozzio Ufficiale AC MILAN</h4>
+                        <hr>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <h5>Credit cart accepted</h5><img src="assets/images/pagamenti-cartecredito.png" class="img-responsive">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <h5>SECURE PAYMENT</h5>
+                        <svg viewBox="0 0 100 50" width="100" height="50">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#verySign" x="0" y="0"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <hr class="visible-xs-block visible-sm-block">
+                    <div class="form-group">
+                      <label for="nomeCarta">Nome sulla carta</label>
+                      <input id="nomeCarta" type="text" placeholder="Nome sulla carta" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="numeroCarta">Numero carta</label>
+                      <input id="numeroCarta" type="text" placeholder="Numero carta" class="form-control">
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-xs-9 col-sm-6 col-md-6 col-lg-6">
+                        <label for="country">Data Scadenza</label>
+                        <div class="row">
+                          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <select class="form-control">
+                              <option value="" selected="selected">Month</option>
+                              <option value="1">01 - gennaio</option>
+                              <option value="2">02 - febbraio</option>
+                              <option value="3">03 - marzo</option>
+                              <option value="4">04 - aprile</option>
+                              <option value="5">05 - maggio</option>
+                              <option value="6">06 - giugno</option>
+                              <option value="7">07 - luglio</option>
+                              <option value="8">08 - agosto</option>
+                              <option value="9">09 - settembre</option>
+                              <option value="10">10 - ottobre</option>
+                              <option value="11">11 - novembre</option>
+                              <option value="12">12 - dicembre</option>
+                            </select>
+                          </div>
+                          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <select class="form-control form-group">
+                              <!--label(for="country") &nbsp;-->
+                              <option value="" selected="selected">Year</option>
+                              <option value="1">2015</option>
+                              <option value="2">2016</option>
+                              <option value="3">2017</option>
+                              <option value="4">2018</option>
+                              <option value="5">2019</option>
+                              <option value="6">2020</option>
+                              <option value="7">2021</option>
+                              <option value="8">2022</option>
+                              <option value="9">2023</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-3 col-sm-2 col-md-3 col-lg-2">
+                        <label for="CCV">CCV&nbsp;&nbsp;<a href=""><span class="badge">?</span></a></label>
+                        <input id="CCV" type="text" placeholder="CCV" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="profile" role="tabpanel" class="tab-pane">
+                <div class="row">
+                  <div class="col-xs-12 text-center"><br>
+                    <h4>Acqusti dal Negozzio Ufficiale AC MILAN</h4>
+                    <p class="lead">click on this button for paying now your order</p><a href="#paypall"><img src="assets/images/payPall.png"></a>
+                    <p>what is&nbsp;<a href="#">Paypall</a></p>
+                    <p>You will be redirected to the PayPal website.</p>
+                  </div>
+                </div>
+              </div>
+              <div id="messages" role="tabpanel" class="tab-pane">
+                <div class="row">
+                  <div class="col-xs-12 text-center"><br>
+                    <h4>Acqusti dal Negozzio Ufficiale AC MILAN</h4>
+                    <p class="lead">For this mothod you will be charged an extra fee of&nbsp;<span class="price"><strong>€3.00</strong></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 paymentMethode">
+            <h3><strong>Payment methode v02</strong></h3>
             <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
               <div class="panel panel-default">
                 <div id="headingOne" role="tab" class="panel-heading">
@@ -753,6 +858,15 @@
       <hr>
       <div class="container">
         <div class="row">
+          <div class="col-xs-12 col-sm-12 pull-right">
+            <form class="text-right">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">I agree to the terms and conditions of sale |&nbsp;<a href="#">Privacy Policy</a>
+                </label>
+              </div>
+            </form>
+          </div>
           <div class="col-xs-12 col-sm-12">
             <div class="contentLineDown pull-right">
               <ul class="list-inline">

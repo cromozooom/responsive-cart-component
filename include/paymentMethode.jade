@@ -1,6 +1,107 @@
 .row
 	.col-xs-12.paymentMethode
-		h3: strong Payment methode
+		h3: strong Payment methode v01
+		//- Nav tabs
+		ul.nav.nav-tabs(role="tablist")
+			li.active(role="presentation")
+				a(href="#home" aria-controls="home" role="tab" data-toggle="tab")
+					span.label.label-info 1
+					| &nbsp;&nbsp;Credit Card
+			li(role="presentation")
+				a(href="#profile" aria-controls="profile" role="tab" data-toggle="tab")
+					span.label.label-info 2
+					| &nbsp;&nbsp;Paypall
+			li(role="presentation")
+				a(href="#messages" aria-controls="messages" role="tab" data-toggle="tab")
+					span.label.label-info 3
+					| &nbsp;&nbsp;Contrassegno
+		//- Tab panes
+		.tab-content
+			#home.tab-pane.active(role="tabpanel")
+				.row
+					.securePayment.col-xs-12.col-sm-12.col-md-6.col-lg-6.text-center.pull-right
+						.row
+							.col-xs-12
+								br
+								h4 Acqusti dal Negozzio Ufficiale AC MILAN
+								hr
+							.col-xs-12.col-sm-6.col-md-6.col-lg-6
+								h5 Credit cart accepted
+								img.img-responsive(src="#{imagePath}pagamenti-cartecredito.png")
+							.col-xs-12.col-sm-6.col-md-6.col-lg-6
+								h5 SECURE PAYMENT
+								svg(viewBox="0 0 100 50" width="100" height="50")
+									use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#verySign" x="0" y="0")
+					.col-xs-12.col-sm-12.col-md-6.col-lg-6
+
+						hr.visible-xs-block.visible-sm-block
+
+						.form-group
+							label(for="nomeCarta") Nome sulla carta
+							input#nomeCarta.form-control(type="text" placeholder="Nome sulla carta")
+						.form-group
+							label(for="numeroCarta") Numero carta
+							input#numeroCarta.form-control(type="text" placeholder="Numero carta")
+						.row
+							.form-group.col-xs-9.col-sm-6.col-md-6.col-lg-6
+								label(for="country") Data Scadenza
+								.row
+									.col-xs-6.col-sm-6.col-md-6.col-lg-6
+										select.form-control
+											option(value="" selected="selected") Month
+											option(value="1") 01 - gennaio
+											option(value="2") 02 - febbraio
+											option(value="3") 03 - marzo
+											option(value="4") 04 - aprile
+											option(value="5") 05 - maggio
+											option(value="6") 06 - giugno
+											option(value="7") 07 - luglio
+											option(value="8") 08 - agosto
+											option(value="9") 09 - settembre
+											option(value="10") 10 - ottobre
+											option(value="11") 11 - novembre
+											option(value="12") 12 - dicembre
+									.col-xs-6.col-sm-6.col-md-6.col-lg-6
+										select.form-control.form-group
+											//label(for="country") &nbsp;
+											option(value="" selected="selected") Year
+											option(value="1") 2015
+											option(value="2") 2016
+											option(value="3") 2017
+											option(value="4") 2018
+											option(value="5") 2019
+											option(value="6") 2020
+											option(value="7") 2021
+											option(value="8") 2022
+											option(value="9") 2023
+							.col-xs-3.col-sm-2.col-md-3.col-lg-2
+								label(for="CCV")
+									| CCV&nbsp;&nbsp;
+									a(href="")
+										span.badge ?
+								input#CCV.form-control(type="text" placeholder="CCV")
+			#profile.tab-pane(role="tabpanel")
+				.row
+					.col-xs-12.text-center
+						br
+						h4 Acqusti dal Negozzio Ufficiale AC MILAN
+						p.lead click on this button for paying now your order
+						a(href="#paypall")
+							img(src="#{imagePath}payPall.png")
+						p what is&nbsp;
+							a(href="#") Paypall
+						p You will be redirected to the PayPal website.
+			#messages.tab-pane(role="tabpanel")
+				.row
+					.col-xs-12.text-center
+						br
+						h4 Acqusti dal Negozzio Ufficiale AC MILAN
+						p.lead
+							| For this mothod you will be charged an extra fee of&nbsp;
+							span.price: strong €3.00
+.row
+	.col-xs-12.paymentMethode
+		h3: strong Payment methode v02
 
 		.panel-group#accordion(role="tablist" aria-multiselectable="true")
 			.panel.panel-default

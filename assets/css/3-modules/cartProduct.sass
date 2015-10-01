@@ -38,9 +38,28 @@ $indent: 10px
 		max-width: 100px
 
 .paymentMethode
+	.nav
+		li
+			a
+				background: red
+				font-weight: bold
+				color: white
+			span.label
+				margin-right: .5em
+				background: white
+				color: $linkColor
+		li.active
+			a
+				background: white
+
+			span.label
+				margin-right: .5em
+				background: $linkColor
+				color: white
 	h4 .label
 		margin-right: .5em
 		background: $linkColor
+
 
 .containerTableProd, .cart-checkout
 	background: darken( white, 15%)
