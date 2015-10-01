@@ -259,6 +259,15 @@ html(lang='en')
 							.col-xs-12.col-sm-6
 								h3 YOUR CART
 							.col-xs-12.col-sm-6
+								block message
+									p.text-right.message Your carts include&nbsp;
+										strong 3 products&nbsp;
+										| with a total price of&nbsp;
+										span.price: strong € 465,00
+						.row
+							.col-xs-12.col-sm-6
+								a.btn-link.btn-sm.btn-info(href="payment.html"): strong back to shopping
+							.col-xs-12.col-sm-6
 								block checkoutAction
 									ul.list-inline.text-right
 										li
@@ -266,12 +275,6 @@ html(lang='en')
 												img(src="#{imagePath}payPall.png")
 										li
 											a.btn.btn-sm.btn-primary(href="payment.html")= checkOutBtnCopy
-							.col-xs-12
-								block message
-									p.text-right.message Your carts include&nbsp;
-										strong 3 products&nbsp;
-										| with a total price of&nbsp;
-										span.price: strong € 465,00
 
 			block add
 				.container-fluid.no-gutter.add
