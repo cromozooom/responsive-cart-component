@@ -260,6 +260,1073 @@ td, th {
     border: 1px solid #ddd !important; }
  }
 
+@at-root {
+  @font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/bootstrap/glyphicons-halflings-regular.eot');
+    src: url('../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/bootstrap/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/bootstrap/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/bootstrap/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg'); }
+ }
+
+/* line 24, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 37, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-asterisk:before {
+  content: "\2a"; }
+
+/* line 38, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-plus:before {
+  content: "\2b"; }
+
+/* line 40, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-euro:before, .glyphicon-eur:before {
+  content: "\20ac"; }
+
+/* line 41, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-minus:before {
+  content: "\2212"; }
+
+/* line 42, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-cloud:before {
+  content: "\2601"; }
+
+/* line 43, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-envelope:before {
+  content: "\2709"; }
+
+/* line 44, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-pencil:before {
+  content: "\270f"; }
+
+/* line 45, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-glass:before {
+  content: "\e001"; }
+
+/* line 46, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-music:before {
+  content: "\e002"; }
+
+/* line 47, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-search:before {
+  content: "\e003"; }
+
+/* line 48, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-heart:before {
+  content: "\e005"; }
+
+/* line 49, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-star:before {
+  content: "\e006"; }
+
+/* line 50, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-star-empty:before {
+  content: "\e007"; }
+
+/* line 51, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-user:before {
+  content: "\e008"; }
+
+/* line 52, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-film:before {
+  content: "\e009"; }
+
+/* line 53, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-th-large:before {
+  content: "\e010"; }
+
+/* line 54, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-th:before {
+  content: "\e011"; }
+
+/* line 55, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-th-list:before {
+  content: "\e012"; }
+
+/* line 56, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-ok:before {
+  content: "\e013"; }
+
+/* line 57, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-remove:before {
+  content: "\e014"; }
+
+/* line 58, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-zoom-in:before {
+  content: "\e015"; }
+
+/* line 59, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-zoom-out:before {
+  content: "\e016"; }
+
+/* line 60, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-off:before {
+  content: "\e017"; }
+
+/* line 61, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-signal:before {
+  content: "\e018"; }
+
+/* line 62, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-cog:before {
+  content: "\e019"; }
+
+/* line 63, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-trash:before {
+  content: "\e020"; }
+
+/* line 64, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-home:before {
+  content: "\e021"; }
+
+/* line 65, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-file:before {
+  content: "\e022"; }
+
+/* line 66, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-time:before {
+  content: "\e023"; }
+
+/* line 67, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-road:before {
+  content: "\e024"; }
+
+/* line 68, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-download-alt:before {
+  content: "\e025"; }
+
+/* line 69, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-download:before {
+  content: "\e026"; }
+
+/* line 70, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-upload:before {
+  content: "\e027"; }
+
+/* line 71, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-inbox:before {
+  content: "\e028"; }
+
+/* line 72, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-play-circle:before {
+  content: "\e029"; }
+
+/* line 73, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-repeat:before {
+  content: "\e030"; }
+
+/* line 74, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-refresh:before {
+  content: "\e031"; }
+
+/* line 75, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-list-alt:before {
+  content: "\e032"; }
+
+/* line 76, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-lock:before {
+  content: "\e033"; }
+
+/* line 77, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-flag:before {
+  content: "\e034"; }
+
+/* line 78, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-headphones:before {
+  content: "\e035"; }
+
+/* line 79, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-volume-off:before {
+  content: "\e036"; }
+
+/* line 80, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-volume-down:before {
+  content: "\e037"; }
+
+/* line 81, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-volume-up:before {
+  content: "\e038"; }
+
+/* line 82, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-qrcode:before {
+  content: "\e039"; }
+
+/* line 83, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-barcode:before {
+  content: "\e040"; }
+
+/* line 84, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-tag:before {
+  content: "\e041"; }
+
+/* line 85, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-tags:before {
+  content: "\e042"; }
+
+/* line 86, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-book:before {
+  content: "\e043"; }
+
+/* line 87, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-bookmark:before {
+  content: "\e044"; }
+
+/* line 88, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-print:before {
+  content: "\e045"; }
+
+/* line 89, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-camera:before {
+  content: "\e046"; }
+
+/* line 90, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-font:before {
+  content: "\e047"; }
+
+/* line 91, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-bold:before {
+  content: "\e048"; }
+
+/* line 92, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-italic:before {
+  content: "\e049"; }
+
+/* line 93, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-text-height:before {
+  content: "\e050"; }
+
+/* line 94, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-text-width:before {
+  content: "\e051"; }
+
+/* line 95, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-align-left:before {
+  content: "\e052"; }
+
+/* line 96, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-align-center:before {
+  content: "\e053"; }
+
+/* line 97, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-align-right:before {
+  content: "\e054"; }
+
+/* line 98, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-align-justify:before {
+  content: "\e055"; }
+
+/* line 99, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-list:before {
+  content: "\e056"; }
+
+/* line 100, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-indent-left:before {
+  content: "\e057"; }
+
+/* line 101, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-indent-right:before {
+  content: "\e058"; }
+
+/* line 102, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-facetime-video:before {
+  content: "\e059"; }
+
+/* line 103, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-picture:before {
+  content: "\e060"; }
+
+/* line 104, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-map-marker:before {
+  content: "\e062"; }
+
+/* line 105, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-adjust:before {
+  content: "\e063"; }
+
+/* line 106, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-tint:before {
+  content: "\e064"; }
+
+/* line 107, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-edit:before {
+  content: "\e065"; }
+
+/* line 108, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-share:before {
+  content: "\e066"; }
+
+/* line 109, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-check:before {
+  content: "\e067"; }
+
+/* line 110, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-move:before {
+  content: "\e068"; }
+
+/* line 111, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-step-backward:before {
+  content: "\e069"; }
+
+/* line 112, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-fast-backward:before {
+  content: "\e070"; }
+
+/* line 113, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-backward:before {
+  content: "\e071"; }
+
+/* line 114, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-play:before {
+  content: "\e072"; }
+
+/* line 115, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-pause:before {
+  content: "\e073"; }
+
+/* line 116, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-stop:before {
+  content: "\e074"; }
+
+/* line 117, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-forward:before {
+  content: "\e075"; }
+
+/* line 118, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-fast-forward:before {
+  content: "\e076"; }
+
+/* line 119, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-step-forward:before {
+  content: "\e077"; }
+
+/* line 120, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-eject:before {
+  content: "\e078"; }
+
+/* line 121, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-chevron-left:before {
+  content: "\e079"; }
+
+/* line 122, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-chevron-right:before {
+  content: "\e080"; }
+
+/* line 123, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-plus-sign:before {
+  content: "\e081"; }
+
+/* line 124, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-minus-sign:before {
+  content: "\e082"; }
+
+/* line 125, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-remove-sign:before {
+  content: "\e083"; }
+
+/* line 126, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-ok-sign:before {
+  content: "\e084"; }
+
+/* line 127, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-question-sign:before {
+  content: "\e085"; }
+
+/* line 128, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-info-sign:before {
+  content: "\e086"; }
+
+/* line 129, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-screenshot:before {
+  content: "\e087"; }
+
+/* line 130, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-remove-circle:before {
+  content: "\e088"; }
+
+/* line 131, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-ok-circle:before {
+  content: "\e089"; }
+
+/* line 132, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-ban-circle:before {
+  content: "\e090"; }
+
+/* line 133, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-arrow-left:before {
+  content: "\e091"; }
+
+/* line 134, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-arrow-right:before {
+  content: "\e092"; }
+
+/* line 135, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-arrow-up:before {
+  content: "\e093"; }
+
+/* line 136, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-arrow-down:before {
+  content: "\e094"; }
+
+/* line 137, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-share-alt:before {
+  content: "\e095"; }
+
+/* line 138, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-resize-full:before {
+  content: "\e096"; }
+
+/* line 139, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-resize-small:before {
+  content: "\e097"; }
+
+/* line 140, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-exclamation-sign:before {
+  content: "\e101"; }
+
+/* line 141, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-gift:before {
+  content: "\e102"; }
+
+/* line 142, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-leaf:before {
+  content: "\e103"; }
+
+/* line 143, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-fire:before {
+  content: "\e104"; }
+
+/* line 144, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-eye-open:before {
+  content: "\e105"; }
+
+/* line 145, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-eye-close:before {
+  content: "\e106"; }
+
+/* line 146, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-warning-sign:before {
+  content: "\e107"; }
+
+/* line 147, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-plane:before {
+  content: "\e108"; }
+
+/* line 148, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-calendar:before {
+  content: "\e109"; }
+
+/* line 149, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-random:before {
+  content: "\e110"; }
+
+/* line 150, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-comment:before {
+  content: "\e111"; }
+
+/* line 151, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-magnet:before {
+  content: "\e112"; }
+
+/* line 152, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-chevron-up:before {
+  content: "\e113"; }
+
+/* line 153, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-chevron-down:before {
+  content: "\e114"; }
+
+/* line 154, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-retweet:before {
+  content: "\e115"; }
+
+/* line 155, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-shopping-cart:before {
+  content: "\e116"; }
+
+/* line 156, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-folder-close:before {
+  content: "\e117"; }
+
+/* line 157, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-folder-open:before {
+  content: "\e118"; }
+
+/* line 158, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-resize-vertical:before {
+  content: "\e119"; }
+
+/* line 159, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-resize-horizontal:before {
+  content: "\e120"; }
+
+/* line 160, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-hdd:before {
+  content: "\e121"; }
+
+/* line 161, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-bullhorn:before {
+  content: "\e122"; }
+
+/* line 162, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-bell:before {
+  content: "\e123"; }
+
+/* line 163, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-certificate:before {
+  content: "\e124"; }
+
+/* line 164, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-thumbs-up:before {
+  content: "\e125"; }
+
+/* line 165, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-thumbs-down:before {
+  content: "\e126"; }
+
+/* line 166, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-hand-right:before {
+  content: "\e127"; }
+
+/* line 167, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-hand-left:before {
+  content: "\e128"; }
+
+/* line 168, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-hand-up:before {
+  content: "\e129"; }
+
+/* line 169, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-hand-down:before {
+  content: "\e130"; }
+
+/* line 170, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-circle-arrow-right:before {
+  content: "\e131"; }
+
+/* line 171, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-circle-arrow-left:before {
+  content: "\e132"; }
+
+/* line 172, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-circle-arrow-up:before {
+  content: "\e133"; }
+
+/* line 173, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-circle-arrow-down:before {
+  content: "\e134"; }
+
+/* line 174, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-globe:before {
+  content: "\e135"; }
+
+/* line 175, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-wrench:before {
+  content: "\e136"; }
+
+/* line 176, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-tasks:before {
+  content: "\e137"; }
+
+/* line 177, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-filter:before {
+  content: "\e138"; }
+
+/* line 178, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-briefcase:before {
+  content: "\e139"; }
+
+/* line 179, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-fullscreen:before {
+  content: "\e140"; }
+
+/* line 180, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-dashboard:before {
+  content: "\e141"; }
+
+/* line 181, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-paperclip:before {
+  content: "\e142"; }
+
+/* line 182, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-heart-empty:before {
+  content: "\e143"; }
+
+/* line 183, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-link:before {
+  content: "\e144"; }
+
+/* line 184, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-phone:before {
+  content: "\e145"; }
+
+/* line 185, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-pushpin:before {
+  content: "\e146"; }
+
+/* line 186, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-usd:before {
+  content: "\e148"; }
+
+/* line 187, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-gbp:before {
+  content: "\e149"; }
+
+/* line 188, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-sort:before {
+  content: "\e150"; }
+
+/* line 189, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-sort-by-alphabet:before {
+  content: "\e151"; }
+
+/* line 190, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-sort-by-alphabet-alt:before {
+  content: "\e152"; }
+
+/* line 191, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-sort-by-order:before {
+  content: "\e153"; }
+
+/* line 192, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-sort-by-order-alt:before {
+  content: "\e154"; }
+
+/* line 193, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-sort-by-attributes:before {
+  content: "\e155"; }
+
+/* line 194, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-sort-by-attributes-alt:before {
+  content: "\e156"; }
+
+/* line 195, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-unchecked:before {
+  content: "\e157"; }
+
+/* line 196, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-expand:before {
+  content: "\e158"; }
+
+/* line 197, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-collapse-down:before {
+  content: "\e159"; }
+
+/* line 198, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-collapse-up:before {
+  content: "\e160"; }
+
+/* line 199, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-log-in:before {
+  content: "\e161"; }
+
+/* line 200, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-flash:before {
+  content: "\e162"; }
+
+/* line 201, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-log-out:before {
+  content: "\e163"; }
+
+/* line 202, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-new-window:before {
+  content: "\e164"; }
+
+/* line 203, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-record:before {
+  content: "\e165"; }
+
+/* line 204, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-save:before {
+  content: "\e166"; }
+
+/* line 205, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-open:before {
+  content: "\e167"; }
+
+/* line 206, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-saved:before {
+  content: "\e168"; }
+
+/* line 207, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-import:before {
+  content: "\e169"; }
+
+/* line 208, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-export:before {
+  content: "\e170"; }
+
+/* line 209, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-send:before {
+  content: "\e171"; }
+
+/* line 210, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-floppy-disk:before {
+  content: "\e172"; }
+
+/* line 211, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-floppy-saved:before {
+  content: "\e173"; }
+
+/* line 212, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-floppy-remove:before {
+  content: "\e174"; }
+
+/* line 213, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-floppy-save:before {
+  content: "\e175"; }
+
+/* line 214, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-floppy-open:before {
+  content: "\e176"; }
+
+/* line 215, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-credit-card:before {
+  content: "\e177"; }
+
+/* line 216, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-transfer:before {
+  content: "\e178"; }
+
+/* line 217, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-cutlery:before {
+  content: "\e179"; }
+
+/* line 218, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-header:before {
+  content: "\e180"; }
+
+/* line 219, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-compressed:before {
+  content: "\e181"; }
+
+/* line 220, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-earphone:before {
+  content: "\e182"; }
+
+/* line 221, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-phone-alt:before {
+  content: "\e183"; }
+
+/* line 222, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-tower:before {
+  content: "\e184"; }
+
+/* line 223, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-stats:before {
+  content: "\e185"; }
+
+/* line 224, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-sd-video:before {
+  content: "\e186"; }
+
+/* line 225, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-hd-video:before {
+  content: "\e187"; }
+
+/* line 226, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-subtitles:before {
+  content: "\e188"; }
+
+/* line 227, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-sound-stereo:before {
+  content: "\e189"; }
+
+/* line 228, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-sound-dolby:before {
+  content: "\e190"; }
+
+/* line 229, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-sound-5-1:before {
+  content: "\e191"; }
+
+/* line 230, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-sound-6-1:before {
+  content: "\e192"; }
+
+/* line 231, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-sound-7-1:before {
+  content: "\e193"; }
+
+/* line 232, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-copyright-mark:before {
+  content: "\e194"; }
+
+/* line 233, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-registration-mark:before {
+  content: "\e195"; }
+
+/* line 234, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-cloud-download:before {
+  content: "\e197"; }
+
+/* line 235, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-cloud-upload:before {
+  content: "\e198"; }
+
+/* line 236, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-tree-conifer:before {
+  content: "\e199"; }
+
+/* line 237, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-tree-deciduous:before {
+  content: "\e200"; }
+
+/* line 238, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-cd:before {
+  content: "\e201"; }
+
+/* line 239, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-save-file:before {
+  content: "\e202"; }
+
+/* line 240, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-open-file:before {
+  content: "\e203"; }
+
+/* line 241, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-level-up:before {
+  content: "\e204"; }
+
+/* line 242, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-copy:before {
+  content: "\e205"; }
+
+/* line 243, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-paste:before {
+  content: "\e206"; }
+
+/* line 252, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-alert:before {
+  content: "\e209"; }
+
+/* line 253, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-equalizer:before {
+  content: "\e210"; }
+
+/* line 254, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-king:before {
+  content: "\e211"; }
+
+/* line 255, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-queen:before {
+  content: "\e212"; }
+
+/* line 256, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-pawn:before {
+  content: "\e213"; }
+
+/* line 257, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-bishop:before {
+  content: "\e214"; }
+
+/* line 258, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-knight:before {
+  content: "\e215"; }
+
+/* line 259, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-baby-formula:before {
+  content: "\e216"; }
+
+/* line 260, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-tent:before {
+  content: "\26fa"; }
+
+/* line 261, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-blackboard:before {
+  content: "\e218"; }
+
+/* line 262, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-bed:before {
+  content: "\e219"; }
+
+/* line 263, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-apple:before {
+  content: "\f8ff"; }
+
+/* line 264, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-erase:before {
+  content: "\e221"; }
+
+/* line 265, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-hourglass:before {
+  content: "\231b"; }
+
+/* line 266, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-lamp:before {
+  content: "\e223"; }
+
+/* line 267, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-duplicate:before {
+  content: "\e224"; }
+
+/* line 268, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-piggy-bank:before {
+  content: "\e225"; }
+
+/* line 269, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-scissors:before {
+  content: "\e226"; }
+
+/* line 270, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-bitcoin:before {
+  content: "\e227"; }
+
+/* line 271, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-btc:before {
+  content: "\e227"; }
+
+/* line 272, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-xbt:before {
+  content: "\e227"; }
+
+/* line 273, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-yen:before {
+  content: "\00a5"; }
+
+/* line 274, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-jpy:before {
+  content: "\00a5"; }
+
+/* line 275, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-ruble:before {
+  content: "\20bd"; }
+
+/* line 276, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-rub:before {
+  content: "\20bd"; }
+
+/* line 277, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-scale:before {
+  content: "\e230"; }
+
+/* line 278, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-ice-lolly:before {
+  content: "\e231"; }
+
+/* line 279, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-ice-lolly-tasted:before {
+  content: "\e232"; }
+
+/* line 280, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-education:before {
+  content: "\e233"; }
+
+/* line 281, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-option-horizontal:before {
+  content: "\e234"; }
+
+/* line 282, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-option-vertical:before {
+  content: "\e235"; }
+
+/* line 283, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-menu-hamburger:before {
+  content: "\e236"; }
+
+/* line 284, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-modal-window:before {
+  content: "\e237"; }
+
+/* line 285, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-oil:before {
+  content: "\e238"; }
+
+/* line 286, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-grain:before {
+  content: "\e239"; }
+
+/* line 287, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-sunglasses:before {
+  content: "\e240"; }
+
+/* line 288, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-text-size:before {
+  content: "\e241"; }
+
+/* line 289, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-text-color:before {
+  content: "\e242"; }
+
+/* line 290, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-text-background:before {
+  content: "\e243"; }
+
+/* line 291, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-object-align-top:before {
+  content: "\e244"; }
+
+/* line 292, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-object-align-bottom:before {
+  content: "\e245"; }
+
+/* line 293, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-object-align-horizontal:before {
+  content: "\e246"; }
+
+/* line 294, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-object-align-left:before {
+  content: "\e247"; }
+
+/* line 295, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-object-align-vertical:before {
+  content: "\e248"; }
+
+/* line 296, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-object-align-right:before {
+  content: "\e249"; }
+
+/* line 297, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-triangle-right:before {
+  content: "\e250"; }
+
+/* line 298, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-triangle-left:before {
+  content: "\e251"; }
+
+/* line 299, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-triangle-bottom:before {
+  content: "\e252"; }
+
+/* line 300, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-triangle-top:before {
+  content: "\e253"; }
+
+/* line 301, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-console:before {
+  content: "\e254"; }
+
+/* line 302, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-superscript:before {
+  content: "\e255"; }
+
+/* line 303, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-subscript:before {
+  content: "\e256"; }
+
+/* line 304, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-menu-left:before {
+  content: "\e257"; }
+
+/* line 305, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-menu-right:before {
+  content: "\e258"; }
+
+/* line 306, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-menu-down:before {
+  content: "\e259"; }
+
+/* line 307, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/glyphicons */
+.glyphicon-menu-up:before {
+  content: "\e260"; }
+
 /* line 11, /Users/nicur/Documents/dev/git/responsive-cart-component/assets/css/1-tools/bootstrap/scaffolding */
 * {
   box-sizing: border-box; }
